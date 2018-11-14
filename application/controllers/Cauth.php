@@ -5,15 +5,15 @@ class Cauth extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model("Usuarios_model");
+		$this->load->model("Musuario");
 	}
 	public function index()
 	{
 		if ($this->session->userdata("login")) {
-			redirect(base_url()."dashboard");
+			redirect(base_url()."cprofile/profile");
 		}
 		else{
-			$this->load->view("admin/login");
+			$this->load->view("cloreg/login");
 		}		
 
 	}
@@ -35,7 +35,7 @@ class Cauth extends CI_Controller {
 				'login' => TRUE
 			);
 			$this->session->set_userdata($data);
-			redirect(base_url()."dashboard");
+			redirect(base_url()."cprofile/profile");
 		}
 	}
 

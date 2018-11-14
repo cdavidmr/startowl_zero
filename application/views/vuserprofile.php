@@ -7,7 +7,7 @@
           <div class="vd_head-section clearfix">
             <div class="vd_panel-header">
               <ul class="breadcrumb">
-                <li><a href="<?php echo base_url(); ?>cloreg/profile">Perfil de Usuario</a> </li>
+                <li><a href="<?php echo base_url(); ?>cprofile/profile">Perfil de Usuario</a> </li>
                 <li><a href="#"></a> </li>
                 
               </ul>
@@ -31,7 +31,7 @@
                 <div class="panel widget light-widget panel-bd-top">
                   <div class="panel-heading no-title"> </div>
                   <div class="panel-body">
-                    <div class="text-center vd_info-parent"> <img alt="example image" src="../resources/img/avatar/big.jpg"> </div>
+                    <div class="text-center vd_info-parent"> <img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/big.jpg"> </div>
                     <div class="row">
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-green btn-xs btn-block no-br"><i class="fa fa-check-circle append-icon" ></i>Amigos</a> </div>
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-grey btn-xs btn-block no-br"><i class="fa fa-envelope append-icon"></i>Enviar un Mensaje</a> </div>
@@ -67,14 +67,14 @@
                     <div class="content-grid column-xs-2 column-sm-3 height-xs-auto mgbt-xs-20">
                       <div>
                         <ul class="list-wrapper">
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar.jpg"></span> </a> </li>
-                          <li class="warning"> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-2.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-3.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-4.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-5.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-6.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-7.jpg"></span> </a> </li>
-                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="../resources/img/avatar/avatar-8.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg"></span> </a> </li>
+                          <li class="warning"> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-2.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-3.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-4.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-5.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-6.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-7.jpg"></span> </a> </li>
+                          <li> <a href="#"> <span class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-8.jpg"></span> </a> </li>
                         </ul>
                       </div>
                     </div>
@@ -96,7 +96,7 @@
   <div class="tab-content">
     <div id="profile-tab" class="tab-pane active">
       <div class="pd-20">
-<div class="vd_info tr"> <a href="<?php echo base_url(); ?>cloreg/editprofile" class="btn vd_btn btn-xs vd_bg-yellow"> <i class="fa fa-pencil append-icon"></i> Completa / Edita tu perfil </a> </div>      
+<div class="vd_info tr"> <a href="<?php echo base_url(); ?>cprofile/editprofile" class="btn vd_btn btn-xs vd_bg-yellow"> <i class="fa fa-pencil append-icon"></i> Completa / Edita tu perfil </a> </div>      
         <h3 class="mgbt-xs-15 mgtp-10 font-semibold"><i class="icon-user mgr-10 profile-icon"></i> Sobre mi</h3>
         <div class="row">
           <div class="col-sm-6">
@@ -206,7 +206,7 @@
                     <li> <span class="menu-icon vd_blue"><i class=" fa fa-user"></i></span> <span class="menu-text"> Actualiza los detalles de tu perfil <span class="menu-info"><span class="menu-date"> ~ Hace una hora</span></span> </span> </li>
                     <li> <span class="menu-icon vd_red"><i class=" fa fa-cogs"></i></span> <span class="menu-text"> Tu configuracion ha sido actualizada <span class="menu-info"><span class="menu-date"> ~ Hace 12 dias</span></span> </span></li>
                     <li>  <span class="menu-icon vd_green"><i class=" fa fa-book"></i></span> <span class="menu-text"> Agrega un nuevo articulo <span class="menu-info"><span class="menu-date"> ~ Hace 19 dias</span></span> </span>  </li>
-                    <li>  <span class="menu-icon vd_green"><img alt="example image" src="../resources/img/avatar/avatar.jpg"></span> <span class="menu-text"> Agrega tu foto de perfil <span class="menu-info"><span class="menu-date"> ~ Hace 20 dias</span></span> </span> </li>
+                    <li>  <span class="menu-icon vd_green"><img alt="example image" src="<? echo base_url(); ?>resources/img/avatar/avatar.jpg"></span> <span class="menu-text"> Agrega tu foto de perfil <span class="menu-info"><span class="menu-date"> ~ Hace 20 dias</span></span> </span> </li>
                     
                   </ul>
                 </div>
@@ -281,7 +281,7 @@
 							  <tbody>
 								<tr>
                                 	<td name="id_idea">01</td>
-									<td name="foto_idea"><img height="80" src="../resources/img/groups/logo-01.jpg" alt="example image"></td>                    
+									<td name="foto_idea"><img height="80" src="<?php echo base_url(); ?>resources/img/groups/logo-01.jpg" alt="example image"></td>                    
                                 	<td name="nombre_idea">Startowl </td>                                    
 									<td name="fi_idea" class="center">2018/11/03</td>
 									<td class="center">
@@ -322,39 +322,39 @@
         <br/>
                 <div class="isotope js-isotope vd_gallery">
                   <div class="gallery-item  filter-1">                    	 
-                  	<a href="../resources/img/photos/01.jpg" data-rel="prettyPhoto[2]"> 
-                    		<img alt="example image" src="../resources/img/photos/01.jpg">
+                  	<a href="<?php echo base_url(); ?>resources/img/photos/01.jpg" data-rel="prettyPhoto[2]"> 
+                    		<img alt="example image" src="<?php echo base_url(); ?>resources/img/photos/01.jpg">
                             <div class="bg-cover"></div> 
                     </a> 
                          <div class="vd_info">
                               <h3 class="mgbt-xs-15"><span name="nombre_idea" class="font-semibold">Startowl1</span> <span>de </span><span name="nombre_usuario"> Maria</span></h3>
-                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="../resources/img/photos/01.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
+                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="<?php echo base_url(); ?>resources/img/photos/01.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-thumbs-up"></i></a> 
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-comments"></i></a>                                                                      
                          </div>
                       
                   </div>
                   <div class="gallery-item  filter-2">                  	
-                      <a href="../resources/img/photos/03.jpg" data-rel="prettyPhoto[2]"> 
-                                <img alt="example image" src="../resources/img/photos/03.jpg">
+                      <a href="<?php echo base_url(); ?>resources/img/photos/03.jpg" data-rel="prettyPhoto[2]"> 
+                                <img alt="example image" src="<?php echo base_url(); ?>resources/img/photos/03.jpg">
                                 <div class="bg-cover"></div> 
                         </a> 
                          <div class="vd_info">
                               <h3 class="mgbt-xs-15"><span name="nombre_idea" class="font-semibold">Idea</span> <span>de </span><span name="nombre_usuario"> Marcelo</span></h3>
-                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="../resources/img/photos/03.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
+                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="<?php echo base_url(); ?>resources/img/photos/03.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-thumbs-up"></i></a> 
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-comments"></i></a>                                                                      
                          </div>                                                     
                   </div>
 
                   <div class="gallery-item  filter-2">
-                      <a href="../resources/img/photos/08.jpg" data-rel="prettyPhoto[2]"> 
-                                <img alt="example image" src="../resources/img/photos/08.jpg">
+                      <a href="<?php echo base_url(); ?>resources/img/photos/08.jpg" data-rel="prettyPhoto[2]"> 
+                                <img alt="example image" src="<?php echo base_url(); ?>resources/img/photos/08.jpg">
                                 <div class="bg-cover"></div> 
                         </a> 
                          <div class="vd_info">
                               <h3 class="mgbt-xs-15"><span name="nombre_idea" class="font-semibold">Idea</span> <span>de </span><span name="nombre_usuario"> Carlos</span></h3>
-                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="../resources/img/photos/08.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
+                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="<?php echo base_url(); ?>resources/img/photos/08.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-thumbs-up"></i></a> 
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-comments"></i></a>                                                                      
                          </div>                    
@@ -362,13 +362,13 @@
                   </div>
                   
                   <div class="gallery-item  filter-1">
-                      <a href="../resources/img/photos/02.jpg" data-rel="prettyPhoto[2]"> 
-                                <img alt="example image" src="../resources/img/photos/02.jpg">
+                      <a href="<?php echo base_url(); ?>resources/img/photos/02.jpg" data-rel="prettyPhoto[2]"> 
+                                <img alt="example image" src="<?php echo base_url(); ?>resources/img/photos/02.jpg">
                                 <div class="bg-cover"></div> 
                         </a> 
                          <div class="vd_info">
                               <h3 class="mgbt-xs-15"><span name="nombre_idea" class="font-semibold">Otra Idea</span> <span>de </span><span name="nombre_usuario"> Maria</span></h3>
-                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="../resources/img/photos/02.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
+                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="<?php echo base_url(); ?>resources/img/photos/02.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-thumbs-up"></i></a> 
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-comments"></i></a>                                                                      
                          </div>                   
@@ -378,13 +378,13 @@
                   
                                    
                   <div class="gallery-item  filter-1">
-                       <a href="../resources/img/photos/10.jpg" data-rel="prettyPhoto[2]"> 
-                                <img alt="example image" src="../resources/img/photos/10.jpg">
+                       <a href="<?php echo base_url(); ?>resources/img/photos/10.jpg" data-rel="prettyPhoto[2]"> 
+                                <img alt="example image" src="<?php echo base_url(); ?>resources/img/photos/10.jpg">
                                 <div class="bg-cover"></div> 
                         </a> 
                          <div class="vd_info">
                               <h3 class="mgbt-xs-15"><span name="nombre_idea" class="font-semibold">Otra Idea</span> <span>de </span><span name="nombre_usuario"> Maria</span></h3>
-                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="../resources/img/photos/10.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
+                              <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="<?php echo base_url(); ?>resources/img/photos/10.jpg"  data-rel="prettyPhoto[1]"><i class="fa fa-search"></i></a>   
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-thumbs-up"></i></a> 
                               <a class="vd_bg-green vd_white mgr-10 btn vd_round-btn btn-xs" role="button" href="#"><i class="fa fa-comments"></i></a>                                                                      
                          </div>                    
@@ -417,7 +417,7 @@
                        <div>
 <ul class="list-wrapper">
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar.jpg" alt="example image"></span> 
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg" alt="example image"></span> 
                          </a>
                         <span class="menu-text"> Gabriella Montagna
                             <span class="menu-info">
@@ -435,7 +435,7 @@
                      </li>
                     <li class="warning"> 
                     		<a href="#"> 
-                    			<span class="menu-icon"><img src="../resources/img/avatar/avatar-2.jpg" alt="example image"></span>  
+                    			<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-2.jpg" alt="example image"></span>  
                             </a>                            
                             <span class="menu-text">  Jonathan Fuzzy
                             	<span class="menu-info">
@@ -452,7 +452,7 @@
                             </span> 
                      </li>    
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-3.jpg" alt="example image"></span> 
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-3.jpg" alt="example image"></span> 
                          </a>    
                         <span class="menu-text">  Sakura Hinata
                             <span class="menu-info">
@@ -469,7 +469,7 @@
                         </span> 
                     </li>                                     
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-4.jpg" alt="example image"></span> 
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-4.jpg" alt="example image"></span> 
                          </a>    
                         <span class="menu-text">  Rikudou Sennin
                             <span class="menu-info">
@@ -486,7 +486,7 @@
                         </span> 
                     </li> 
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-5.jpg" alt="example image"></span>  
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-5.jpg" alt="example image"></span>  
                          </a>   
                         <span class="menu-text">  Kim Kardiosun
                             <span class="menu-info">
@@ -503,7 +503,7 @@
                         </span> 
                      </li>
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-6.jpg" alt="example image"></span>
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-6.jpg" alt="example image"></span>
                          </a>    
                         <span class="menu-text">   Brad Pita
                             <span class="menu-info">
@@ -520,7 +520,7 @@
                         </span> 
                     </li>                                     
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-7.jpg" alt="example image"></span> 
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-7.jpg" alt="example image"></span> 
                          </a>   
                         <span class="menu-text">  Carlos Pinto
                             <span class="menu-info">
@@ -537,7 +537,7 @@
                         </span> 
                     </li> 
                     <li> <a href="#"> 
-                    		<span class="menu-icon"><img src="../resources/img/avatar/avatar-8.jpg" alt="example image"></span>
+                    		<span class="menu-icon"><img src="<?php echo base_url(); ?>resources/img/avatar/avatar-8.jpg" alt="example image"></span>
                          </a>    
                         <span class="menu-text">  Goerge Bruno Marz
                             <span class="menu-info">
@@ -567,7 +567,7 @@
                     <div class="content-list content-large menu-action-right">
                         <ul class="list-wrapper pd-lr-15">
                         <li>  
-                            <div class="menu-icon"><a href="#"><img src="../resources/img/groups/logo-01.jpg" alt="example image"></a></div> 
+                            <div class="menu-icon"><a href="#"><img src="<?php echo base_url(); ?>resources/img/groups/logo-01.jpg" alt="example image"></a></div> 
                             <div class="menu-text"> 
                                 <h4 class="mgbt-xs-0"><a href="#">Groupis Group</a></h4>
                                 <div class="menu-info">
@@ -590,7 +590,7 @@
                     <div class="content-list content-large menu-action-right">
                         <ul class="list-wrapper pd-lr-15">
                         <li>  
-                            <div class="menu-icon"><a href="#"><img src="../resources/img/groups/logo-02.jpg" alt="example image"></a></div> 
+                            <div class="menu-icon"><a href="#"><img src="<?php echo base_url(); ?>resources/img/groups/logo-02.jpg" alt="example image"></a></div> 
                             <div class="menu-text"> 
                                 <h4 class="mgbt-xs-0"><a href="#">Ztormin Community</a></h4>
                                 <div class="menu-info">
@@ -613,7 +613,7 @@
                     <div class="content-list content-large menu-action-right">
                         <ul class="list-wrapper pd-lr-15">
                         <li>  
-                            <div class="menu-icon"><a href="#"><img src="../resources/img/groups/logo-03.jpg" alt="example image"></a></div> 
+                            <div class="menu-icon"><a href="#"><img src="<?php echo base_url(); ?>resources/img/groups/logo-03.jpg" alt="example image"></a></div> 
                             <div class="menu-text"> 
                                 <h4 class="mgbt-xs-0"><a href="#">Book Lovers</a></h4>
                                 <div class="menu-info">
@@ -650,7 +650,7 @@
                     <div class="content-list content-blog-large">
                       <ul class="list-wrapper">
                         <li>
-                          <div class="menu-icon"> <img alt="example image" src="../resources/img/blog/01.jpg"> </div>
+                          <div class="menu-icon"> <img alt="example image" src="<?php echo base_url(); ?>resources/img/blog/01.jpg"> </div>
                           <div class="menu-text">
                             <h2 class="blog-title font-bold letter-xs"><a href="#"> Some Significant Blog Title </a></h2>
                             <div class="menu-info">
@@ -661,7 +661,7 @@
                             <a class="btn vd_btn vd_bg-green btn-sm" href="#">Read More</a> </div>
                         </li>
                         <li>
-                          <div class="menu-icon"> <img alt="example image" src="../resources/img/blog/02.jpg"> </div>
+                          <div class="menu-icon"> <img alt="example image" src="<?php echo base_url(); ?>resources/img/blog/02.jpg"> </div>
                           <div class="menu-text">
                             <h2 class="blog-title font-bold letter-xs"><a href="#"> Cool Obligation </a></h2>
                             <div class="menu-info">
@@ -672,7 +672,7 @@
                             <a class="btn vd_btn vd_bg-green btn-sm" href="#">Read More</a> </div>
                         </li>
                         <li>
-                          <div class="menu-icon"> <img alt="example image" src="../resources/img/blog/03.jpg"> </div>
+                          <div class="menu-icon"> <img alt="example image" src="<?php echo base_url(); ?>resources/img/blog/03.jpg"> </div>
                           <div class="menu-text">
                             <h2 class="blog-title font-bold letter-xs"><a href="#"> Get What You Want </a></h2>
                             <div class="menu-info">
@@ -683,7 +683,7 @@
                             <a class="btn vd_btn vd_bg-green btn-sm" href="#">Read More</a> </div>
                         </li>
                         <li>
-                          <div class="menu-icon"> <img alt="example image" src="../resources/img/blog/01.jpg"> </div>
+                          <div class="menu-icon"> <img alt="example image" src="<?php echo base_url(); ?>resources/img/blog/01.jpg"> </div>
                           <div class="menu-text">
                             <h2 class="blog-title font-bold letter-xs"><a href="#"> Excelent in Every Step </a></h2>
                             <div class="menu-info">

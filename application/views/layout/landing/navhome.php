@@ -88,7 +88,7 @@
                         </div>
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-10">
-                                <form action="<?php echo base_url(); ?>cloreg/modulo" class="form-wrap mt-4">
+                                <form action="<?php echo base_url(); ?>cmodulo/modulo" class="form-wrap mt-4">
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <input type="text" placeholder="Categoria de tu idea de Negocio?" class="btn-group1">
                                         <input type="text" placeholder="País que quieres Emprender?" class="btn-group2">
