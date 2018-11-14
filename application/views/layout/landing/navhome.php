@@ -61,10 +61,8 @@
                                         <a class="nav-link" href="#">Quienes Somos</a>
                                     </li>
                                    
-                                    <li><a href="<?php echo base_url(); ?>cloreg/login" class="btn btn-outline-light top-btn" ><span class=""></span> Ingresar</a></li>
-
-                                    
-                                    <li><a href="<?php echo base_url(); ?>cloreg/register" class="btn btn-outline-light top-btn" ><span class=""></span> Registrarse </a></li>
+                                    <li class="nav-item"><a href="<?php echo base_url(); ?>cloreg/login" class="btn btn-outline-light top-btn" ><span class=""></span> Ingresar </a></li>                                 
+                                    <li class="nav-item"><a href="<?php echo base_url(); ?>cloreg/register" class="btn btn-outline-light top-btn" ><span class=""></span> Registrarse </a></li>
                                 </ul>
                             </div>
                         </nav>
