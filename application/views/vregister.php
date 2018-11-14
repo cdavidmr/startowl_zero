@@ -23,7 +23,7 @@
                 <div class="panel-body">
 <!--                  <div id="register-success" class="alert alert-success" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Registration confirmation has been sent to your email </div>
                   <div id="register-passerror" class="alert alert-danger" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Your password and Confirm password are not same </div>-->
-                  <form class="form-horizontal"  action="functions/register-form.php" role="form" id="register-form">
+                  <form class="form-horizontal"  action="<?php echo base_url(); ?>cauth/login" role="form" id="register-form">
                   <div class="alert alert-danger vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> Verifica los datos y vuelve a intentarlo. </div>
