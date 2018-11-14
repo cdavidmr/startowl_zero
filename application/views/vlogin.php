@@ -16,7 +16,7 @@
             <div class="vd_login-page">
               <div class="heading clearfix">
                 <div class="logo">
-                  <a href="http://localhost:8085/startowl/"><h2 class="mgbt-xs-5">StartOwl</h2></a>
+                  <a href="<? echo base_url(); ?>"><h2 class="mgbt-xs-5">StartOwl</h2></a>
                 </div>
                 <h4 class="text-center font-semibold vd_grey">Ingresa con tu CUENTA</h4>
               </div>
