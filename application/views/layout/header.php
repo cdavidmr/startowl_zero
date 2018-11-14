@@ -957,7 +957,7 @@
       <div class="child-menu"  data-action="click-target">
             <ul>
                 <li>
-                    <a href="<?php echo base_url(); ?>cloreg/mapaemprende">
+                    <a href="<?php echo base_url(); ?>cmapastartowl">
                         <span class="menu-text">Emprendedores en el mundo</span>  
                     </a>
                 </li>              
