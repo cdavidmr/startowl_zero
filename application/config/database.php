@@ -74,11 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'   => 'pdo:host=ec2-107-20-193-206.compute-1.amazonaws.com;dbname=d583k91imv8tcm;port=5432',
-	'hostname' => '',
+	'dsn'   => '',
+	'port' => 5432,
+	'hostname' => 'ec2-107-20-193-206.compute-1.amazonaws.com',
 	'username' => 'ubyeplxucdwwyy',
 	'password' => 'cb944f1c1274574317b0ef4d8671aef18f01194f4b7826ee39ddd1c08c0c2784',
-	'database' => '',
+	'database' => 'd583k91imv8tcm',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
