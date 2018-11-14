@@ -93,7 +93,5 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-    'schema' => 'public',
-   	'sslmode' => 'require',
 	'save_queries' => TRUE
 );
