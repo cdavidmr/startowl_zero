@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'   => '',
-	'port' => 5432,
 	'hostname' => 'mysql:host=ec2-107-20-193-206.compute-1.amazonaws.com',
+	'port' => 5432,
 	'username' => 'ubyeplxucdwwyy',
 	'password' => 'cb944f1c1274574317b0ef4d8671aef18f01194f4b7826ee39ddd1c08c0c2784',
 	'database' => 'd583k91imv8tcm',
