@@ -5,13 +5,13 @@ class Chomepage extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
-        $this->load->view('layout/headhome');
-        $this->load->view('layout/navhome');
+        $this->load->view('layout/landing/headhome');
+        $this->load->view('layout/landing/navhome');
     }
     
     public function index(){
 		$this->load->view('vhomepage');
-        $this->load->view('layout/footerhome');
+        $this->load->view('layout/landing/footerhome');
     }
     
 }
