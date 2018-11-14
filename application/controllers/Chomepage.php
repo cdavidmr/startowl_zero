@@ -7,11 +7,19 @@ class Chomepage extends CI_Controller {
         parent::__construct();
         $this->load->view('layout/landing/headhome');
         $this->load->view('layout/landing/navhome');
+        $data  = array(
+            'id' => '', 
+            'nombre' => '',
+            'rol' => '',
+            'login' => FALSE
+        );
+        $this->session->set_userdata($data);
     }
     
     public function index(){
 		$this->load->view('vhomepage');
         $this->load->view('layout/landing/footerhome');
     }
+    
     
 }
