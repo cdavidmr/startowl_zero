@@ -22,5 +22,5 @@ class Cloreg extends CI_Controller {
             $this->load->view('vforgotpass');
             $this->load->view('layout/footer');
     }
-    
+
 }

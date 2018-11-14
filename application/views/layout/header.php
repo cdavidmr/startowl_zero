@@ -33,7 +33,7 @@
                   <span class="menu visible-xs" data-action="submenu">
                     <i class="fa fa-bars"></i>
                   </span>        
-                  <a href="<?php echo base_url(); ?>cloreg/modulo">
+                  <a href="<?php echo base_url(); ?>cmodulo">
                     <span class="menu visible-sm visible-xs" data-action="">
                       <i class="fa fa-comments"></i>
                     </span>                   
@@ -376,7 +376,7 @@
         <div class="child-menu"> 
           <div class="content-list content-menu">
                 <ul class="list-wrapper pd-lr-10">
-                    <li> <a href="<?php echo base_url(); ?>cloreg/profile"> <div class="menu-icon"><i class=" fa fa-user"></i></div> <div class="menu-text">Mí Perfíl</div> </a> </li>
+                    <li> <a href="<?php echo base_url(); ?>cprofile/profile"> <div class="menu-icon"><i class=" fa fa-user"></i></div> <div class="menu-text">Mí Perfíl</div> </a> </li>
                     <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-trophy"></i></div> <div class="menu-text">Mis Logros</div> </a> </li>
                     <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-envelope"></i></div> <div class="menu-text">Mensajes</div><div class="menu-badge"><div class="badge vd_bg-red">10</div></div> </a>  </li>
                     <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-tasks
@@ -398,7 +398,7 @@
     </li>               
        
     <li id="top-menu-settings" class="one-big-icon hidden-xs hidden-sm mega-li" data-intro="<strong>Toggle Right Navigation </strong><br/>On smaller device such as tablet or phone you can click on the middle content to close the right or left navigation." data-step=2 data-position="left"> 
-      <a href="<?php echo base_url(); ?>cloreg/modulo" class="mega-link"  data-action=""> 
+      <a href="<?php echo base_url(); ?>cmodulo" class="mega-link"  data-action=""> 
            <span class="mega-icon">
                 <i class="fa fa-comments"></i> 
             </span> 
@@ -862,25 +862,25 @@
             <ul>
                                                                                                       
                 <li>
-                    <a href="<?php echo base_url(); ?>cloreg/nuevaidea">
+                    <a href="<?php echo base_url(); ?>cidea/nuevaidea">
                         <span class="menu-text">Publicar Idea</span>  
                         <!-- <span class="menu-badge"><span class="badge vd_bg-yellow">NEW</span></span> -->
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url(); ?>cloreg/buscaidea">
+                    <a href="<?php echo base_url(); ?>cidea/buscaidea">
                         <span class="menu-text">Buscar Ideas</span>  
                         <span class="menu-badge"><span class="badge vd_bg-yellow"></span></span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url(); ?>cloreg/populares">
+                    <a href="<?php echo base_url(); ?>cidea/populares">
                         <span class="menu-text">Populares</span>  
                         <span class="menu-badge"><span class="badge vd_bg-yellow"></span></span>
                     </a>
                 </li> 
                 <li>
-                    <a href="<?php echo base_url(); ?>cloreg/ultimos">
+                    <a href="<?php echo base_url(); ?>cidea/ultimos">
                         <span class="menu-text">Últimos agregados</span>  
                         <span class="menu-badge"><span class="badge vd_bg-yellow"></span></span>
                     </a>
