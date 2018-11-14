@@ -13,7 +13,7 @@
                     <div class="find-place-img_wrap">
                         <div class="grid">
                             <figure class="effect-ruby">
-                                <img src="<?php echo base_url(); ?>resources/images/find-place1.jpg" class="img-fluid" alt="img13" />
+                                <img src="/resources/images/find-place1.jpg" class="img-fluid" alt="img13" />
                                 <figcaption>
                                     <h5>Proveedores</h5>
                                     <p>385 Proveedores</p>
@@ -28,7 +28,7 @@
                             <div class="find-place-img_wrap">
                                 <div class="grid">
                                     <figure class="effect-ruby">
-                                        <img src="<?php echo base_url(); ?>resources/images/find-place2.jpg" class="img-fluid" alt="img13" />
+                                        <img src="/resources/images/find-place2.jpg" class="img-fluid" alt="img13" />
                                         <figcaption>
                                             <h5>Asesor de Negocios</h5>
                                             <p>210 Asesores</p>
@@ -43,7 +43,7 @@
                             <div class="find-place-img_wrap">
                                 <div class="grid">
                                     <figure class="effect-ruby">
-                                        <img src="<?php echo base_url(); ?>resources/images/find-place3.jpg" class="img-fluid" alt="img13" />
+                                        <img src="/resources/images/find-place3.jpg" class="img-fluid" alt="img13" />
                                         <figcaption>
                                             <h5>Tutoriales</h5>
                                             <p>514 Tutoriales, motivacion, liderazgo...</p>
@@ -60,7 +60,7 @@
                             <div class="find-place-img_wrap">
                                 <div class="grid">
                                     <figure class="effect-ruby">
-                                        <img src="<?php echo base_url(); ?>resources/images/find-place4.jpg" class="img-fluid" alt="img13" />
+                                        <img src="/resources/images/find-place4.jpg" class="img-fluid" alt="img13" />
                                         <figcaption>
                                             <h5>Colaboradores </h5>
                                             <p>3145 Emprendedores Registrados</p>
@@ -75,7 +75,7 @@
                             <div class="find-place-img_wrap">
                                 <div class="grid">
                                     <figure class="effect-ruby">
-                                        <img src="<?php echo base_url(); ?>resources/images/find-place5.jpg" class="img-fluid" alt="img13" />
+                                        <img src="/resources/images/find-place5.jpg" class="img-fluid" alt="img13" />
                                         <figcaption>
                                             <h5>Capital </h5>
                                             <p>79 Inversionistas que les puede gustar tu idea.</p>
@@ -104,7 +104,7 @@
                 <div class="col-md-4 featured-responsive">
                     <div class="featured-place-wrap">
                         <a href="detail.html">
-                            <img src="<?php echo base_url(); ?>resources/images/featured1.jpg" class="img-fluid" alt="#">
+                            <img src="/resources/images/featured1.jpg" class="img-fluid" alt="#">
                             <span class="featured-rating-green">9.8</span>
                             <div class="featured-title-box">
                                 <h6>Restaurantes de Cadena</h6>
@@ -135,7 +135,7 @@
                 <div class="col-md-4 featured-responsive">
                     <div class="featured-place-wrap">
                         <a href="detail.html">
-                            <img src="<?php echo base_url(); ?>resources/images/featured2.jpg" class="img-fluid" alt="#">
+                            <img src="/resources/images/featured2.jpg" class="img-fluid" alt="#">
                             <span class="featured-rating-green">9.5</span>
                             <div class="featured-title-box">
                                 <h6>Desarrollo de app´s en Estonia</h6>
@@ -166,7 +166,7 @@
                 <div class="col-md-4 featured-responsive">
                     <div class="featured-place-wrap">
                         <a href="detail.html">
-                            <img src="<?php echo base_url(); ?>resources/images/featured3.jpg" class="img-fluid" alt="#">
+                            <img src="/resources/images/featured3.jpg" class="img-fluid" alt="#">
                             <span class="featured-rating-green">8.9</span>
                             <div class="featured-title-box">
                                 <h6>Tiendas de Ropa en Bogotá</h6>

@@ -12,21 +12,21 @@
     <!-- Page Title -->
     <title>StartOwl</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/indexcss/bootstrap.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
     <!-- Simple line Icon -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/simple-line-icons.css">
+    <link rel="stylesheet" href="/resources/indexcss/simple-line-icons.css">
     <!-- Themify Icon -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/themify-icons.css">
+    <link rel="stylesheet" href="/resources/indexcss/themify-icons.css">
     <!-- Hover Effects -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/set1.css">
+    <link rel="stylesheet" href="/resources/indexcss/set1.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/style.css">
+    <link rel="stylesheet" href="/resources/indexcss/style.css">
 
-    <link href="<?php echo base_url(); ?>resources/custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="/resources/custom/custom.css" rel="stylesheet" type="text/css">
 
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>resources/img/ico/favicon.png">
+    <link rel="shortcut icon" href="/resources/img/ico/favicon.png">
 
 </head>
 

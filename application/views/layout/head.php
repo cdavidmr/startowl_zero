@@ -19,56 +19,56 @@
     
     
     
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url(); ?>resources/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url(); ?>resources/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url(); ?>resources/img/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>resources/img/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>resources/img/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/resources/img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/resources/img/ico/favicon.png">
     
     
     
-    <link rel="stylesheet" href="<?php echo base_url(); ?>resources/indexcss/themify-icons.css">
+    <link rel="stylesheet" href="/resources/indexcss/themify-icons.css">
    
 
-    <link href="<?php echo base_url(); ?>resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="<?php echo base_url(); ?>resources/css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="/resources/css/font-entypo.css" rel="stylesheet" type="text/css">    
 
     
-    <link href="<?php echo base_url(); ?>resources/css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="/resources/css/fonts.css"  rel="stylesheet" type="text/css">
                
     
-    <link href="<?php echo base_url(); ?>resources/plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="<?php echo base_url(); ?>resources/plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-    <link href="<?php echo base_url(); ?>resources/plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
+    <link href="/resources/plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
+    <link href="/resources/plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="/resources/plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
    
          
-    <link href="<?php echo base_url(); ?>resources/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="<?php echo base_url(); ?>resources/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="<?php echo base_url(); ?>resources/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <link href="/resources/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
+    <link href="/resources/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
+    <link href="/resources/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
      
     
-    <link href="<?php echo base_url(); ?>resources/css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="/resources/css/theme.min.css" rel="stylesheet" type="text/css">
     
-    <link href="<?php echo base_url(); ?>resources/css/chrome.css" rel="stylesheet" type="text/chrome">  
+    <link href="/resources/css/chrome.css" rel="stylesheet" type="text/chrome">  
 
 
-    <link href="<?php echo base_url(); ?>resources/css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+    <link href="/resources/css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
    
 
-    <link href="<?php echo base_url(); ?>resources/custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="/resources/custom/custom.css" rel="stylesheet" type="text/css">
 
 
    
-    <script type="text/javascript" src="<?php echo base_url(); ?>resources/js/modernizr.js"></script> 
-    <script type="text/javascript" src="<?php echo base_url(); ?>resources/js/mobile-detect.min.js"></script> 
-    <script type="text/javascript" src="<?php echo base_url(); ?>resources/js/mobile-detect-modernizr.js"></script> 
+    <script type="text/javascript" src="/resources/js/modernizr.js"></script> 
+    <script type="text/javascript" src="/resources/js/mobile-detect.min.js"></script> 
+    <script type="text/javascript" src="/resources/js/mobile-detect-modernizr.js"></script> 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -78,10 +78,10 @@
 
 
     <!-- Specific CSS -->
-    <link href="<?php echo base_url(); ?>resources/plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url(); ?>resources/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">    
+    <link href="/resources/plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
+    <link href="/resources/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">    
 
         <!-- for specific page Agregar Idea in style css -->
             <style>

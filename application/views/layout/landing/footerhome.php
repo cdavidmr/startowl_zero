@@ -24,9 +24,9 @@
 
     <!-- jQuery, Bootstrap JS. -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?php echo base_url(); ?>resources/indexjs/jquery-3.2.1.min.js"></script>
-    <script src="<?php echo base_url(); ?>resources/indexjs/popper.min.js"></script>
-    <script src="<?php echo base_url(); ?>resources/indexjs/bootstrap.min.js"></script>
+    <script src="/resources/indexjs/jquery-3.2.1.min.js"></script>
+    <script src="/resources/indexjs/popper.min.js"></script>
+    <script src="/resources/indexjs/bootstrap.min.js"></script>
 
     <script>
         $(window).scroll(function() {

@@ -112,7 +112,7 @@
            <div data-rel="scroll">
                <ul class="list-wrapper">
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar.jpg"></div> 
                          </a>
                         <div class="menu-text"> Gabriella Montagna
                             <div class="menu-info">
@@ -130,7 +130,7 @@
                      </li>
                     <li class="warning"> 
                         <a href="#"> 
-                          <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-2.jpg"></div>  
+                          <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-2.jpg"></div>  
                             </a>                            
                             <div class="menu-text">  Jonathan Fuzzy
                               <div class="menu-info">
@@ -147,7 +147,7 @@
                             </div> 
                      </li>    
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-3.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-3.jpg"></div> 
                          </a>    
                         <div class="menu-text">  Sakura Hinata
                             <div class="menu-info">
@@ -164,7 +164,7 @@
                         </div> 
                     </li>                                     
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-4.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-4.jpg"></div> 
                          </a>    
                         <div class="menu-text">  Rikudou Sennin
                             <div class="menu-info">
@@ -181,7 +181,7 @@
                         </div> 
                     </li> 
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-5.jpg"></div>  
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-5.jpg"></div>  
                          </a>   
                         <div class="menu-text">  Kim Kardiosun
                             <div class="menu-info">
@@ -198,7 +198,7 @@
                         </div> 
                      </li>
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-6.jpg"></div>
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-6.jpg"></div>
                          </a>    
                         <div class="menu-text">   Brad Pita
                             <div class="menu-info">
@@ -215,7 +215,7 @@
                         </div> 
                     </li>                                     
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-7.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-7.jpg"></div> 
                          </a>   
                         <div class="menu-text">  Celline Dior
                             <div class="menu-info">
@@ -232,7 +232,7 @@
                         </div> 
                     </li> 
                     <li> <a href="#"> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-8.jpg"></div>
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-8.jpg"></div>
                          </a>    
                         <div class="menu-text">  Goerge Bruno Marz
                             <div class="menu-info">
@@ -277,7 +277,7 @@
                <div  data-rel="scroll"> 
                <ul class="list-wrapper pd-lr-10">
                     <li> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar.jpg"></div> 
                             <div class="menu-text"> Do you play or follow any sports?
                               <div class="menu-info">
                                     <span class="menu-date">12 Minutes Ago </span>                                                                         
@@ -346,7 +346,7 @@
                             </div> 
                     </a> </li> 
                     <li> <a href="#"> 
-                        <div class="menu-icon vd_green"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg"></div> 
+                        <div class="menu-icon vd_green"><img alt="example image" src="/resources/img/avatar/avatar.jpg"></div> 
                             <div class="menu-text">  Change Profile Pic
                               <div class="menu-info"><span class="menu-date">20 Days Ago</span></div>                              
                             </div> 
@@ -366,7 +366,7 @@
     <li id="top-menu-profile" class="profile mega-li"> 
         <a href="#" class="mega-link"  data-action="click-trigger"> 
             <span  class="mega-image">
-                <img src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg" alt="example image" />               
+                <img src="/resources/img/avatar/avatar.jpg" alt="example image" />               
             </span>
             <span class="mega-name">
                 Usuario <i class="fa fa-caret-down fa-fw"></i> 
@@ -403,7 +403,7 @@
                 <i class="fa fa-comments"></i> 
             </span> 
 <!--            <span  class="mega-image">
-                <img src="<?php echo base_url(); ?>resources/img/avatar/avatar.jpg" alt="example image" />               
+                <img src="/resources/img/avatar/avatar.jpg" alt="example image" />               
             </span> -->           
       <span class="badge vd_bg-green">Chat</span>               
         </a>              
@@ -680,7 +680,7 @@
                             </div> 
                     </a> </li>    
                     <li> <a> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-3.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-3.jpg"></div> 
                             <div class="menu-text"> Client: Zoe Project
                               <div class="menu-info">
                                     <span class="menu-date">Make a call</span>                                                                         
@@ -741,7 +741,7 @@
                             </div> 
                     </a> </li>    
                     <li> <a> 
-                        <div class="menu-icon"><img alt="example image" src="<?php echo base_url(); ?>resources/img/avatar/avatar-3.jpg"></div> 
+                        <div class="menu-icon"><img alt="example image" src="/resources/img/avatar/avatar-3.jpg"></div> 
                             <div class="menu-text"> Client: Zoe Project
                               <div class="menu-info">
                                     <span class="menu-date">Make a call</span>                                                                         
