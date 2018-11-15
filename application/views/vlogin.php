@@ -36,7 +36,7 @@
                         <div class="label-wrapper sr-only">
                           <label class="control-label" for="email">Email</label>
                         </div>
-                        <div class="vd_input-wrapper" id="email-input-wrapper"> <span class="menu-icon"> <i class="fa icon-github2"></i> </span>
+                        <div class="vd_input-wrapper" id="email-input-wrapper"> <span class="menu-icon"> <i class="fa icon-user"></i> </span>
                           <input type="text" placeholder="Usuario" class="required" required  name="username" id="nombre_usuario">
                         </div>
                         <div class="label-wrapper">
