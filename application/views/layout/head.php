@@ -66,7 +66,7 @@
 
 
    
-    <script type="text/javascript" src="/resources/js/modernizr.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script> 
     <script type="text/javascript" src="/resources/js/mobile-detect.min.js"></script> 
     <script type="text/javascript" src="/resources/js/mobile-detect-modernizr.js"></script> 
 
