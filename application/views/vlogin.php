@@ -36,13 +36,13 @@
                         <div class="label-wrapper sr-only">
                           <label class="control-label" for="email">Email</label>
                         </div>
-                        <div class="vd_input-wrapper" id="email-input-wrapper"> <span class="menu-icon"> <i class="fa icon-user"></i> </span>
+                        <div class="vd_input-wrapper" id="email-input-wrapper"> <span class="menu-icon"> <i class="fa-2x icon-user"></i> </span>
                           <input type="text" placeholder="Usuario" class="required" required  name="username" id="nombre_usuario">
                         </div>
                         <div class="label-wrapper">
                           <label class="control-label sr-only" for="password">Contraseña</label>
                         </div>
-                        <div class="vd_input-wrapper" id="password-input-wrapper" > <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
+                        <div class="vd_input-wrapper" id="password-input-wrapper" > <span class="menu-icon"> <i class="fa-2x fa-lock"></i> </span>
                           <input type="password" placeholder="Contraseña" id="password" name="password" class="required" required>
                         </div>
                       </div>
