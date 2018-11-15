@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="/resources/indexcss/themify-icons.css">
    
 
-    <link href="/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <link href="/resources/css/font-entypo.css" rel="stylesheet" type="text/css">    
 
