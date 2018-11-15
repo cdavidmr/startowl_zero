@@ -23,7 +23,8 @@
               <div class="panel widget">
                 <div class="panel-body">
                   <div class="login-icon entypo-icon"> <i class="icon-key"></i> </div>
-                  <form class="form-horizontal" id="login-form" action="<?php echo base_url(); ?>cloreg/profile" role="form">
+
+                  <form class="form-horizontal" id="login-form" action="<?php echo base_url(); ?>cauth" role="form">
                   <div class="alert alert-danger vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> Verifica tus datos e intenta ingresar nuevamente. </div>
@@ -66,6 +67,7 @@
                       </div>
                     </div>
                   </form>
+                  
                 </div>
               </div>
               <!-- Panel Widget -->
