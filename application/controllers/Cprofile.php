@@ -10,7 +10,7 @@ class Cprofile extends CI_Controller {
         }        
         // CARGAR MODELOS
         $this->load->model("Musuario");
-        $this->load->model("Pais");
+        $this->load->model("Mpais");
 
 
         $this->load->view('layout/head');
