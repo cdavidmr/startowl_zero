@@ -35,9 +35,9 @@
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-green btn-xs btn-block no-br"><i class="fa fa-check-circle append-icon" ></i>Amigos</a> </div>
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-grey btn-xs btn-block no-br"><i class="fa fa-envelope append-icon"></i>Enviar un Mensaje</a> </div>
                     </div>
-                    <h2 class="font-semibold mgbt-xs-5"><span id="apellido"><?php echo ucwords($usuario->apell_usuario); ?></span><span>, </span><span id="nombre"><?php echo ucwords($usuario->nom_usuario); ?></span><span>.</span></h2>
-                    <h4>Propietaria en Colina, SAS.</h4>
-                    <p>Desarrollo mi negocio de insumos biodegradables desde hace 2 años.</p>
+                    <h2 class="font-semibold mgbt-xs-5"><span id="apellido"><?php echo ucwords($usuario->apell_usuario); ?></span><span>, </span><span id="nombre"><?php echo ucwords($usuario->nom_usuario); ?></span><span></span></h2>
+                    <h4></h4>
+                    <p>Desarrollo mi negocio de insumos biodegradables desde hace 2 años</p>
                     <div class="mgtp-20">
                       <table class="table table-striped table-hover">
                         <tbody>
@@ -169,7 +169,8 @@
             </div>
           </div>
         </div>
-        <hr class="pd-10"  />
+        <!-- PROXIMAMENTE  -->
+        <!-- <hr class="pd-10"  />
         <div class="row">
           <div class="col-sm-7 mgbt-xs-20">
             <h3 class="mgbt-xs-15 font-semibold"><i class="fa fa-file-text-o mgr-10 profile-icon"></i> EXPERIENCIA</h3>
@@ -191,7 +192,7 @@
               </ul>
             </div>            
           </div>
-        </div>
+        </div> -->
         <!-- row -->
         <hr class="pd-10"  />
         <div class="row">
