@@ -13,7 +13,7 @@ class Cprofile extends CI_Controller {
         $codigo = $this->session->userdata("cod_usuario");
         $res = $this->Musuario->getprofile($codigo);
         
-			$data  = array(		
+			$this->$data  = array(		
                 'nombre' => $res -> nom_usuario,
                 'apellido' => $res -> apell_usuario,
                 'nacimiento' => $res -> nacimiento_usuario,
