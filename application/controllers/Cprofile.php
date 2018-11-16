@@ -8,46 +8,24 @@ class Cprofile extends CI_Controller {
         if (!$this->session->userdata("login")) {
             redirect(base_url());
         }        
+        $codigo = $this->session->userdata("cod_usuario");
+
+			$data  = array(		
+                'usuario_profile' => $this->Musuario->getprofile($codigo),
+            );
+
         $this->load->model("Musuario");
         $this->load->view('layout/head');
         $this->load->view('layout/header');
     }
     
     public function profile(){
-        $codigo = $this->session->userdata("cod_usuario");
-        $res = $this->Musuario->getprofile($codigo);
-        
-			$data  = array(		
-                'nombre' => $res -> nom_usuario,
-                'apellido' => $res -> apell_usuario,
-                'nacimiento' => $res -> nacimiento_usuario,
-                'empresa' => $res -> empresa_usuario,
-                'competencia' => $res -> cod_habilidad,
-                'correo' => $res -> email_usuario,
-                'pais' => $res -> cod_pais,
-                'idioma' => $res -> cod_idioma,
-                'telefono' => $res -> tel_usuario,
-            );
             
         $this->load->view('vuserprofile',$data);
         $this->load->view('layout/footer');
     }
     
     public function editprofile(){
-        $codigo = $this->session->userdata("cod_usuario");
-        $res = $this->Musuario->getprofile($codigo);
-        
-			$data  = array(		
-                'nombre' => $res -> nom_usuario,
-                'apellido' => $res -> apell_usuario,
-                'nacimiento' => $res -> nacimiento_usuario,
-                'empresa' => $res -> empresa_usuario,
-                'competencia' => $res -> cod_habilidad,
-                'correo' => $res -> email_usuario,
-                'pais' => $res -> cod_pais,
-                'idioma' => $res -> cod_idioma,
-                'telefono' => $res -> tel_usuario,
-            );
             
         $this->load->view('vedituserprofile',$data);
         $this->load->view('layout/footer');
