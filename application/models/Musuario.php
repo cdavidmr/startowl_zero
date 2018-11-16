@@ -16,7 +16,7 @@ class Musuario extends CI_Model {
 		}
 	}
 
-	public function getprofile($codigo){
+	public function getProfile($codigo){
 		$this->db->where("cod_usuario", $codigo);		
 		$resultados = $this->db->get("usuario");
 		return $resultados->result();
