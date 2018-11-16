@@ -17,7 +17,7 @@ class Cprofile extends CI_Controller {
     public function profile(){
         $codigo = $this->session->userdata("cod_usuario");
 			$data  = array(		
-                'usuario_profile' => $this->Musuario->getprofile($codigo),
+                'usuario_profile' => $this->Musuario->getProfile($codigo),
             );    
         $this->load->view('vuserprofile',$data);
         $this->load->view('layout/footer');
