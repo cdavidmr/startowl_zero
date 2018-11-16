@@ -22,6 +22,8 @@ class Cprofile extends CI_Controller {
         
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
+            );
+			$data  = array(		
                 'pais' => $this->Mpais->getPais($data->usuario->cod_pais),
             );
                         
