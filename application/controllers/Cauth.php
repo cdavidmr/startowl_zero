@@ -21,7 +21,7 @@ class Cauth extends CI_Controller {
 	public function login(){
 		$username = $this->input->post("username");
 		$password = $this->input->post("password");
-		$res = $this->Usuarios_model->login($username, sha1($password));
+		$res = $this->Musuario->login($username, sha1($password));
 
 		if (!$res) {
 			$this->session->set_flashdata("error","El usuario y/o contraseña son incorrectos");
