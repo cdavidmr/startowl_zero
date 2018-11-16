@@ -386,7 +386,7 @@
 "></i></div> <div class="menu-text">Privacidad</div> </a> </li>
                     <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-cogs"></i></div> <div class="menu-text">Configuraciones</div> </a> </li>
                     <li> <a href="#"> <div class="menu-icon"><i class="  fa fa-key"></i></div> <div class="menu-text">Seguridad</div> </a> </li>
-                    <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-sign-out"></i></div>  <div class="menu-text">Cerrar Sesión</div> </a> </li>
+                    <li> <a href="<?php base_url(); ?>cauth/logout"> <div class="menu-icon"><i class=" fa fa-sign-out"></i></div>  <div class="menu-text">Cerrar Sesión</div> </a> </li>
                     <li class="line"></li>                
                     <li> <a href="#"> <div class="menu-icon"><i class=" fa fa-question-circle"></i></div> <div class="menu-text">Ayuda</div> </a> </li>
                     <li> <a href="#"> <div class="menu-icon"><i class=" glyphicon glyphicon-bullhorn"></i></div> <div class="menu-text">Reportar un problema</div> </a> </li>              
