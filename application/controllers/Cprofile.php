@@ -8,16 +8,14 @@ class Cprofile extends CI_Controller {
         if (!$this->session->userdata("login")) {
             redirect(base_url());
         } 
-
         $this->load->model("Musuario");   
 
-        $codigo = $this->session->userdata("cod_usuario");
         $this->load->view('layout/head');
         $this->load->view('layout/header');
     }
     
     public function profile(){
-
+        $codigo = $this->session->userdata("cod_usuario");
 			$data  = array(		
                 'usuario_profile' => $this->Musuario->getprofile($codigo),
             );    
@@ -26,7 +24,7 @@ class Cprofile extends CI_Controller {
     }
     
     public function editprofile(){
-
+        $codigo = $this->session->userdata("cod_usuario");
         $data  = array(		
             'usuario_profile' => $this->Musuario->getprofile($codigo),
         );            
