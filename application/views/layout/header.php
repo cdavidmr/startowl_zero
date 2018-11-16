@@ -369,7 +369,7 @@
                 <img src="/resources/img/avatar/avatar.jpg" alt="example image" />               
             </span>
             <span class="mega-name">
-                Usuario <i class="fa fa-caret-down fa-fw"></i> 
+                <?php echo $this->session->userdata("username"); ?> <i class="fa fa-caret-down fa-fw"></i> 
             </span>
         </a> 
       <div class="vd_mega-menu-content  width-xs-2  left-xs left-sm" data-action="click-target">

@@ -7,7 +7,8 @@ class Cprofile extends CI_Controller {
         parent::__construct();
         if (!$this->session->userdata("login")) {
             redirect(base_url());
-        }
+        }        
+		$this->load->model("Musuario");
         $this->load->view('layout/head');
         $this->load->view('layout/header');
     }

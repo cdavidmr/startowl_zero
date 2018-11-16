@@ -28,10 +28,9 @@ class Cauth extends CI_Controller {
 			redirect(base_url()."cloreg/login");
 		}
 		else{
-			$data  = array(
-				'correo' => $res->email_usuario, 
-				'nombre' => $res->nom_usuario,
-				'rol' => $res->rol_usuario,
+			$data  = array(				
+				'cod_rol' => $res->cod_rol,
+				'username' => $res->cod_usuario,
 				'login' => TRUE
 			);
 			$this->session->set_userdata($data);
