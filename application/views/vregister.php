@@ -112,7 +112,7 @@
                         <select class="selectpicker">
                           <option>Seleccione</option>
                         <?php foreach($paises as $pais):?>
-                          <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
+                          <option value="<?php echo utf8_encode($pais->cod_pais); ?>" name="<?php echo utf8_encode($pais->nom_pais); ?>"><?php echo utf8_encode($pais->nom_pais); ?></option>
                         <?php endforeach; ?>
                         </select>
                         <?php endif; ?>
