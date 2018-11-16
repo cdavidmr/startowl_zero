@@ -102,7 +102,7 @@
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Nombre:</label>
-              <div class="col-xs-7 controls">Nombre de usuario</div>
+              <div class="col-xs-7 controls"><?php echo $data->nombre; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>

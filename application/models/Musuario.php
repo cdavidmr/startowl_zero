@@ -16,16 +16,9 @@ class Musuario extends CI_Model {
 		}
 	}
 
-	public function profile($username, $password){
-		$this->db->where("username_usuario", $username);
-		$this->db->where("pass_usuario", $password);
-
+	public function getprofile($codigo){
+		$this->db->where("cod_usuario", $codigo);		
 		$resultados = $this->db->get("usuario");
-		if ($resultados->num_rows() > 0) {
-			return $resultados->row();
-		}
-		else{
-			return false;
-		}
+		return $resultados->row();
 	}
 }
