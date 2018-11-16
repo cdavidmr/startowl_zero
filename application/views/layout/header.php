@@ -1046,7 +1046,7 @@
     <div class="vd_menu vd_navbar-bottom-widget">
         <ul>
             <li>
-                <a href="pages-logout.php">
+                <a href="<?php base_url(); ?>cauth/logout">
                     <span class="menu-icon"><i class="fa fa-sign-out"></i></span>          
                     <span class="menu-text">Cerrar Sesión</span>             
                 </a>

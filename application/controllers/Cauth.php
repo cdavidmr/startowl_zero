@@ -7,6 +7,7 @@ class Cauth extends CI_Controller {
 		parent::__construct();
 		$this->load->model("Musuario");
 	}
+	
 	public function index()
 	{
 		if ($this->session->userdata("login")) {

@@ -8,6 +8,17 @@ class Cloreg extends CI_Controller {
         $this->load->view('layout/head');
     }
     
+    public function index()
+	{
+		if ($this->session->userdata("login")) {
+			redirect(base_url()."cprofile/profile");
+		}
+		else{
+			$this->load->view("cloreg/login");
+		}		
+
+    }
+    
     public function login(){
         $this->load->view('vlogin');
         $this->load->view('layout/footer');
