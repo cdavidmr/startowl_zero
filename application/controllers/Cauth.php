@@ -8,15 +8,15 @@ class Cauth extends CI_Controller {
 		$this->load->model("Musuario");
 	}
 
-	public function index()
-	{
-		if ($this->session->userdata("login")) {
-			redirect(base_url()."cprofile/profile");
-		}
-		else{
-			$this->load->view("cloreg/login");
-		}		
-	}
+	// public function index()
+	// {
+	// 	if ($this->session->userdata("login")) {
+	// 		redirect(base_url()."cprofile/profile");
+	// 	}
+	// 	else{
+	// 		$this->load->view("cloreg/login");
+	// 	}		
+	// }
 
 	public function login(){
 		$username = $this->input->post("username");
