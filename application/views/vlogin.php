@@ -25,6 +25,7 @@
                   <div class="login-icon entypo-icon"> <i class="icon-key"></i> </div>   
 
                   <?php if($this->session->flashdata("error")):?>
+                <h4 class="text-center font-semibold vd_grey">Ingresa con tu CUENTA</h4>
                   <div class="alert alert-danger">
                     <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> Verifica tus datos e intenta ingresar nuevamente. </div>
