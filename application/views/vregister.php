@@ -38,7 +38,7 @@
                   <div class="alert alert-success vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span>Hemos enviado una confirmacion de registro a tu correo </div>                  
-                    <h1>Por favor complete los campos marcados con <span class="vd_red">*</span></h1>
+                    <p>Por favor complete los campos marcados con <span class="vd_red">*</span></p>
                     <div class="form-group">
                       <div class="col-md-6">
                         <div class="label-wrapper">
@@ -112,7 +112,7 @@
                         <select class="selectpicker">
                           <option>Seleccione</option>
                         <?php foreach($paises as $pais):?>
-                          <option value="<?php echo $pais->cod_pais?>" name="<?php echo $pais->nom_pais?>"><?php echo $pais->nom_pais?></option>
+                          <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                         <?php endforeach; ?>
                         </select>
                         <?php endif; ?>

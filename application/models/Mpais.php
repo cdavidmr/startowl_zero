@@ -5,7 +5,7 @@ class Mpais extends CI_Model {
 
 	public function getPais(){
 		$resultados = $this->db->get("pais");
-		return $resultados->row();
+		return $resultados->result();
 	}
 
 }
