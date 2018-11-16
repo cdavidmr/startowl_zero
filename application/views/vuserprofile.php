@@ -143,28 +143,28 @@
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Fecha de Nacimiento:</label>
-              <div class="col-xs-7 controls">fecha de usuario</div>
+              <div class="col-xs-7 controls"><?php echo $usuario->nacimiento_usuario; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Intereses:</label>
-              <div class="col-xs-7 controls">Intereses de usuario</div>
+              <div class="col-xs-7 controls"><?php ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Web:</label>
-              <div class="col-xs-7 controls"><a href="http://Vendroid.venmond.com">webs blogs de usuario</a></div>
+              <div class="col-xs-7 controls"><a href="<?php ?>">webs blogs de usuario</a></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Teléfono:</label>
-              <div class="col-xs-7 controls">telefono de usuario</div>
+              <div class="col-xs-7 controls"><?php echo ucwords($usuario->tel_usuario); ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
