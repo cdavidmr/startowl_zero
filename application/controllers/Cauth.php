@@ -7,7 +7,7 @@ class Cauth extends CI_Controller {
 		parent::__construct();
 		$this->load->model("Musuario");
 	}
-	
+
 	public function index()
 	{
 		if ($this->session->userdata("login")) {
@@ -16,7 +16,6 @@ class Cauth extends CI_Controller {
 		else{
 			$this->load->view("cloreg/login");
 		}		
-
 	}
 
 	public function login(){

@@ -5,6 +5,7 @@ class Chomepage extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
+        $this->load->controller('cauth');
         $this->load->view('layout/landing/headhome');
         $this->load->view('layout/landing/navhome');
     }
