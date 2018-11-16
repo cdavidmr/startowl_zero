@@ -8,7 +8,7 @@
 <!-- End of Data -->
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>StartOwl</title>
     <meta name="keywords" content="HTML5 Template, CSS3, All Purpose Admin Template, Vendroid" />
     <meta name="description" content="Login Pages - Responsive Admin HTML Template">
