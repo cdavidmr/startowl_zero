@@ -8,15 +8,15 @@ class Cauth extends CI_Controller {
 		$this->load->model("Musuario");
 	}
 
-	// public function index()
-	// {
-	// 	if ($this->session->userdata("login")) {
-	// 		redirect(base_url()."cprofile/profile");
-	// 	}
-	// 	else{
-	// 		$this->load->view("cloreg/login");
-	// 	}		
-	// }
+	public function index()
+	{
+		if ($this->session->userdata("login")) {
+			redirect(base_url()."cprofile/profile");
+		}
+		else{
+			$this->load->view("cloreg/login");
+		}		
+	}
 
 	public function login(){
 		$username = $this->input->post("username");
@@ -25,7 +25,7 @@ class Cauth extends CI_Controller {
 
 		if (!$res) {
 			$this->session->set_flashdata("error","El usuario y/o contraseña son incorrectos");
-			redirect(base_url());
+			redirect(base_url()."cloreg/login");
 		}
 		else{
 			$data  = array(
