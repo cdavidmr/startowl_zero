@@ -102,14 +102,14 @@
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Nombre:</label>
-              <div class="col-xs-7 controls"><?php echo $usuario_profile->nom_usuario; ?></div>
+              <div class="col-xs-7 controls"><?php echo $data['nombre']; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Apellido:</label>
-              <div class="col-xs-7 controls"><?php echo $usuario_profile->apell_usuario; ?></div>
+              <div class="col-xs-7 controls"><?php echo $data['apellido']; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
