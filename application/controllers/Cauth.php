@@ -21,7 +21,7 @@ class Cauth extends CI_Controller {
 	public function login(){
 		$username = $this->input->post("username");
 		$password = $this->input->post("password");
-		$res = $this->Musuario->login($username, sha1($password));
+		$res = $this->Musuario->login(strtolower($username), sha1($password));
 
 		if (!$res) {
 			$this->session->set_flashdata("error","error contraseña o username");
@@ -30,7 +30,7 @@ class Cauth extends CI_Controller {
 		else{
 			$data  = array(				
 				'cod_rol' => $res->cod_rol,
-				'username' => $res->cod_usuario,
+				'username' => $res->username_usuario,
 				'login' => TRUE
 			);
 			$this->session->set_userdata($data);
