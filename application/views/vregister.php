@@ -21,18 +21,24 @@
               </div>
               <div class="panel widget">
                 <div class="panel-body">
+
+                <?php if($this->session->flashdata("error")):?>
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
+                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong><?php echo $this->session->flashdata("error"); ?></div>
+                <?php endif; ?>
+
 <!--                  <div id="register-success" class="alert alert-success" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Registration confirmation has been sent to your email </div>
                   <div id="register-passerror" class="alert alert-danger" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Your password and Confirm password are not same </div>-->
-                  <form class="form-horizontal"  action="<?php echo base_url(); ?>cauth/login" role="form" id="register-form">
-                  <div class="alert alert-danger vd_hidden">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
-                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> Verifica los datos y vuelve a intentarlo. </div>
+                  <form class="form-horizontal"  action="<?php echo base_url(); ?>cnewuser/register" role="form" id="register-form">
+                  
                   <div class="alert alert-warning vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span>Verifique confirmacion de contraseña </div>                    
                   <div class="alert alert-success vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span>Hemos enviado una confirmacion de registro a tu correo </div>                  
+                    <h1>Por favor complete los campos marcados con <span class="vd_red">*</span></h1>
                     <div class="form-group">
                       <div class="col-md-6">
                         <div class="label-wrapper">
@@ -51,7 +57,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <div class="col-md-12">
                         <div class="label-wrapper">
                           <label class="control-label">Compañia <span class="vd_red"></span></label>
@@ -60,14 +66,14 @@
                           <input type="text" placeholder="Compañia (Opcional)" name="company" id="company">
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group ">
+                    </div> -->
+                    <!-- <div class="form-group ">
                       <div class="col-md-3">
                         <div class="label-wrapper">
                           <label class="control-label">Telefono <span class="vd_red"></span></label>
                         </div>
-                        <div class="vd_input-wrapper" id="country-code-input-wrapper"> <span class="menu-icon"> <i class="fa fa-plus"></i> </span>
-                          <input type="" placeholder="Codigo" name="country" id="country">
+                        <div class="vd_input-wrapper" id="country-code-input-wrapper"> <span class="menu-icon"> <i class="fa fa-phone"></i> </span>
+                          <input type="tel" pattern="[0-9]" placeholder="Codigo"  name="telefono" id="tel">
                         </div>
                       </div>
                       <div class="col-md-9">
@@ -78,8 +84,8 @@
                           <input placeholder="Numero Telefónico" name="phone" id="phone">
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group">
+                    </div> -->
+                    <!-- <div class="form-group">
                       <div class="col-md-12">
                         <div class="label-wrapper">
                           <label class="control-label">Web</label>
@@ -88,9 +94,9 @@
                           <input type="text" placeholder="Página Web, Blog." name="website" id="website">
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="label-wrapper">
                           <label class="control-label">Correo <span class="vd_red">*</span></label>
                         </div>
@@ -98,15 +104,18 @@
                           <input type="email" placeholder="correo" class="required" required  name="email" id="email">
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="label-wrapper">
-                          <label class="control-label">Nombre de Usuario <span class="vd_red">*</span></label>
+                          <label class="control-label">Pais</label>
                         </div>
-                        <div class="vd_input-wrapper" id="email-input-wrapper"> <span class="menu-icon"> <i class="fa icon-github2"></i> </span>
-                          <input type="text" placeholder="Nombre de Usuario" class="required" required  name="nombre_usuario" id="nombre_usuario">
-                        </div>
+                        <?php if(!empty($paises)):?>
+                        <select class="selectpicker">
+                          <option>Seleccione</option>
+                        <?php foreach($paises as $pais):?>
+                          <option value="<?php echo $pais->cod_pais?>" name="<?php echo $pais->nom_pais?>"><?php echo $pais->nom_pais?></option>
+                        <?php endforeach; ?>
+                        </select>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <div class="form-group">
@@ -130,10 +139,10 @@
                     <div id="vd_login-error" class="alert alert-danger hidden"><i class="fa fa-exclamation-circle fa-fw"></i> Este Campo es necesario. </div>
                     <div class="form-group">
                       <div class="col-md-12 mgbt-xs-10 mgtp-20">
-                        <div class="vd_checkbox">
+                        <!-- <div class="vd_checkbox">
                           <input type="checkbox" id="checkbox-1" value="1">
                           <label for="checkbox-1"> Enviarme notificaciones de actualizaciones</label>
-                        </div>
+                        </div> -->
                         <div class="vd_checkbox">
                           <input type="checkbox" id="checkbox-2" value="1" required name="checkbox-2">
                           <label for="checkbox-2"> Estoy de acuerdo con los <a href="#">terminos de servicio</a></label>

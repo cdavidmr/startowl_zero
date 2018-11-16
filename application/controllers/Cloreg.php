@@ -8,6 +8,7 @@ class Cloreg extends CI_Controller {
 		if ($this->session->userdata("login")) {
 			redirect(base_url()."cprofile/profile");
 		}
+		$this->load->model("Mpais");
         $this->load->view('layout/head');	        
     }
     
@@ -17,8 +18,11 @@ class Cloreg extends CI_Controller {
         $this->load->view('layout/footer');
     }
      
-    public function register(){
-            $this->load->view('vregister');
+    public function register(){                
+        $data  = array(		
+            'paises' => $this->Mpais->getPais(),
+        );
+            $this->load->view('vregister', $data);
             $this->load->view('layout/footer');
     }
 

@@ -23,4 +23,29 @@ class Musuario extends CI_Model {
 		$resultados = $this->db->get();
 		return $resultados->row();
 	}
+
+	public function getUsername($username){
+		$this->db->where("username_usuario", $username);
+		$resultados = $this->db->get("usuario");
+		if ($resultados->num_rows() > 0) {
+			return false;
+		}
+	}
+
+	public function getEmail($email){
+		$this->db->where("username_usuario", $email);
+		$resultados = $this->db->get("usuario");
+		if ($resultados->num_rows() > 0) {
+			return false;
+		}
+	}
+
+	public function setUser($codigo){
+		$this->db->where("cod_usuario", $codigo);
+		$this->db->from('usuario');
+		$this->db->join('pais', 'usuario.cod_pais = pais.cod_pais');	
+		$resultados = $this->db->get();
+		return $resultados->row();
+	}
+
 }
