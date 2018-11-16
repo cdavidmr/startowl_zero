@@ -34,7 +34,7 @@ class Cprofile extends CI_Controller {
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
             );
-        $this->load->view('vedituserprofile',$data,$data2);
+        $this->load->view('vedituserprofile',$data);
         $this->load->view('layout/footer');
     }
         
