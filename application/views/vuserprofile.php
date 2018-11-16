@@ -116,14 +116,14 @@
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Usuario:</label>
-              <div class="col-xs-7 controls"><?php echo ucwords($usuario->username_usuario); ?></div>
+              <div class="col-xs-7 controls"><?php echo $usuario->username_usuario; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Correo:</label>
-              <div class="col-xs-7 controls"><?php echo ucwords($usuario->email_usuario); ?></div>
+              <div class="col-xs-7 controls"><?php echo $usuario->email_usuario; ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
