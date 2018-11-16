@@ -31,7 +31,7 @@
                 <div class="panel widget light-widget panel-bd-top">
                   <div class="panel-heading no-title"> </div>
                   <div class="panel-body">
-                    <div class="text-center vd_info-parent"> <img alt="example image" src="/resources/img/avatar/big.jpg"> </div>
+                    <div class="text-center vd_info-parent"> <img alt="example image" src="/resources/img/avatar/avatar.jpg"> </div>
                     <div class="row">
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-green btn-xs btn-block no-br"><i class="fa fa-check-circle append-icon" ></i>Amigos</a> </div>
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-grey btn-xs btn-block no-br"><i class="fa fa-envelope append-icon"></i>Enviar un Mensaje</a> </div>
