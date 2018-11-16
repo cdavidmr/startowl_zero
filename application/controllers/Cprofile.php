@@ -8,12 +8,9 @@ class Cprofile extends CI_Controller {
         if (!$this->session->userdata("login")) {
             redirect(base_url());
         }        
+        
         $this->load->model("Musuario");
-        $this->load->view('layout/head');
-        $this->load->view('layout/header');
-    }
-    
-    public function profile(){
+
         $codigo = $this->session->userdata("cod_usuario");
         $res = $this->Musuario->getProfile($codigo);
         
@@ -28,6 +25,12 @@ class Cprofile extends CI_Controller {
                 'idioma' => $res -> cod_idioma,
                 'telefono' => $res -> tel_usuario,
             );
+
+        $this->load->view('layout/head');
+        $this->load->view('layout/header');
+    }
+    
+    public function profile(){
             
         $this->load->view('vuserprofile',$data);
         $this->load->view('layout/footer');
