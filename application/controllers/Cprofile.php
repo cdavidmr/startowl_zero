@@ -23,10 +23,6 @@ class Cprofile extends CI_Controller {
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
             );
-        $codpais = $data->usuario->cod_pais;
-			$data2  = array(		
-                'pais' => $this->Mpais->getPais($codpais),
-            );
                         
         $this->load->view('vuserprofile',$data,$data2);
         $this->load->view('layout/footer');
