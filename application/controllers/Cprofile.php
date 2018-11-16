@@ -8,7 +8,11 @@ class Cprofile extends CI_Controller {
         if (!$this->session->userdata("login")) {
             redirect(base_url());
         }        
+        // CARGAR MODELOS
         $this->load->model("Musuario");
+        $this->load->model("Pais");
+
+
         $this->load->view('layout/head');
         $this->load->view('layout/header');
     }
@@ -18,6 +22,7 @@ class Cprofile extends CI_Controller {
         
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
+                'pais' => $this->Musuario->getPais($usuario->cod_pais),
             );
             
         $this->load->view('vuserprofile',$data);
@@ -26,20 +31,10 @@ class Cprofile extends CI_Controller {
     
     public function editprofile(){
         $codigo = $this->session->userdata("cod_usuario");
-        $res = $this->Musuario->getProfile($codigo);
         
 			$data  = array(		
-                'nombre' => $res -> nom_usuario,
-                'apellido' => $res -> apell_usuario,
-                'nacimiento' => $res -> nacimiento_usuario,
-                'empresa' => $res -> empresa_usuario,
-                'competencia' => $res -> cod_habilidad,
-                'correo' => $res -> email_usuario,
-                'pais' => $res -> cod_pais,
-                'idioma' => $res -> cod_idioma,
-                'telefono' => $res -> tel_usuario,
+                'usuario' => $this->Musuario->getProfile($codigo),
             );
-            
         $this->load->view('vedituserprofile',$data);
         $this->load->view('layout/footer');
     }

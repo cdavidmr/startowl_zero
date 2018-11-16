@@ -36,7 +36,7 @@
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-green btn-xs btn-block no-br"><i class="fa fa-check-circle append-icon" ></i>Amigos</a> </div>
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-grey btn-xs btn-block no-br"><i class="fa fa-envelope append-icon"></i>Enviar un Mensaje</a> </div>
                     </div>
-                    <h2 class="font-semibold mgbt-xs-5"><span id="apellido">COLINA</span><span>, </span><span id="nombre">Maria</span><span>.</span></h2>
+                    <h2 class="font-semibold mgbt-xs-5"><span id="apellido"><?php echo ucwords($usuario->apell_usuario); ?></span><span>, </span><span id="nombre"><?php echo ucwords($usuario->nom_usuario); ?></span><span>.</span></h2>
                     <h4>Propietaria en Colina, SAS.</h4>
                     <p>Desarrollo mi negocio de insumos biodegradables desde hace 2 años.</p>
                     <div class="mgtp-20">
@@ -63,7 +63,7 @@
                 
                 <div class="panel widget light-widget">
                   <div class="panel-body-list">
-                    <h3 class="pd-20 mgbt-xs-0"><i class="fa fa-users mgr-10"></i>SÓCIOS</h3>
+                    <h3 class="pd-20 mgbt-xs-0"><i class="fa fa-users mgr-10"></i>Contactos</h3>
                     <div class="content-grid column-xs-2 column-sm-3 height-xs-auto mgbt-xs-20">
                       <div>
                         <ul class="list-wrapper">
@@ -116,28 +116,28 @@
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Usuario:</label>
-              <div class="col-xs-7 controls">usuario de usuario</div>
+              <div class="col-xs-7 controls"><?php echo ucwords($usuario->username_usuario); ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Correo:</label>
-              <div class="col-xs-7 controls"><?php  ?></div>
+              <div class="col-xs-7 controls"><?php echo ucwords($usuario->email_usuario); ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Ciudad:</label>
-              <div class="col-xs-7 controls">ciudad de usuario</div>
+              <div class="col-xs-7 controls"></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
           <div class="col-sm-6">
             <div class="row mgbt-xs-0">
               <label class="col-xs-5 control-label">Pais:</label>
-              <div class="col-xs-7 controls">pais de usuario</div>
+              <div class="col-xs-7 controls"><?php echo ucwords($pais->nom_pais); ?></div>
               <!-- col-sm-10 --> 
             </div>
           </div>
