@@ -29,9 +29,9 @@ class Cauth extends CI_Controller {
 		}
 		else{
 			$data  = array(
-				'id' => $res->id, 
-				'nombre' => $res->nombres,
-				'rol' => $res->rol_id,
+				'correo' => $res->email_usuario, 
+				'nombre' => $res->nom_usuario,
+				'rol' => $res->rol_usuario,
 				'login' => TRUE
 			);
 			$this->session->set_userdata($data);
