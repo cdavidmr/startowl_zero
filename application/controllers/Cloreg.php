@@ -4,21 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Cloreg extends CI_Controller {
 
     public function __construct(){
-        parent::__construct();
-        $this->load->view('layout/head');
-        $this->index;
-    }
-    
-    public function index()
-	{
+        parent::__construct();        
 		if ($this->session->userdata("login")) {
 			redirect(base_url()."cprofile/profile");
 		}
 		else{
-			$this->load->view("cloreg/login");
-		}		
-
+        $this->load->view('layout/head');
+        }		        
     }
+    
     
     public function login(){
         $this->load->view('vlogin');
