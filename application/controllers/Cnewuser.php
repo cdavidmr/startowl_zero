@@ -18,7 +18,7 @@ class Cnewuser extends CI_Controller {
 		}		
 	}
 
-	public function newRegister(){
+	public function register(){
 		$nombre = $this->input->post("nombre");
         $apellido = $this->input->post("apellido");
 		$pais = $this->input->post("cod_pais");
