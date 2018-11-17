@@ -78,7 +78,7 @@
 
 
     <!-- Specific CSS -->
-    <link href="/resources/plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js" rel="stylesheet" type="text/css">
     <link href="/resources/plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/resources/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
     <link href="/resources/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">    

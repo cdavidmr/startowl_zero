@@ -33,7 +33,7 @@
 <!--[if lt IE 9]>
   <script type="text/javascript" src="../resources/js/excanvas.js"></script>      
 <![endif]-->
-<script type="text/javascript" src="/resources/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script> 
 <script type="text/javascript" src='/resources/plugins/jquery-ui/jquery-ui.custom.min.js'></script>
 <script type="text/javascript" src="/resources/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
@@ -41,7 +41,7 @@
 <script type="text/javascript" src="/resources/js/plugins.js"></script>
 
 <script type="text/javascript" src="/resources/plugins/breakpoints/breakpoints.js"></script>
-<script type="text/javascript" src="/resources/plugins/dataTables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/resources/plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
 
 <script type="text/javascript" src="/resources/plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
