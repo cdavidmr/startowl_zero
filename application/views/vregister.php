@@ -111,7 +111,7 @@
                         <div class="vd_input-wrapper">
                         <?php if(!empty($paises)):?> 
                         <select class="vd_input-wrapper selectpicker">
-                          <option>Seleccione</option>
+                          <option class="vd_input-wrapper">Seleccione</option>
                         <?php foreach($paises as $pais):?>
                           <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                         <?php endforeach; ?>
@@ -123,7 +123,7 @@
                     <div class="form-group">
                       <div class="col-md-4">
                         <div class="label-wrapper">
-                          <label class="control-label">Nombre de usuario<span class="vd_red">*</span></label>
+                          <label class="control-label">Username<span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="username-input-wrapper"> <span class="menu-icon"> <i class="fa fa-user"></i> </span>
                           <input type="text" placeholder="usuario" class="required" required  name="username" id="username">
