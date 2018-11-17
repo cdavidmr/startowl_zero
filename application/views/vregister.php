@@ -108,14 +108,16 @@
                         <div class="label-wrapper">
                           <label class="control-label">Pais</label>
                         </div>
-                        <?php if(!empty($paises)):?>
-                        <select class="vd_input-wrapper selectpicker">
+                        <div class="vd_input-wrapper">
+                        <?php if(!empty($paises)):?> 
+                        <select class="selectpicker">
                           <option>Seleccione</option>
                         <?php foreach($paises as $pais):?>
                           <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                         <?php endforeach; ?>
                         </select>
                         <?php endif; ?>
+                        </div> 
                       </div>
                     </div>
                     <div class="form-group">
@@ -133,6 +135,14 @@
                         </div>
                         <div class="vd_input-wrapper" id="password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
                           <input type="password" placeholder="Contraseña" class="required" required  name="password" id="password">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="label-wrapper">
+                          <label class="control-label">Confirmar contraseña <span class="vd_red">*</span></label>
+                        </div>
+                        <div class="vd_input-wrapper" id="confirm-password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
+                          <input type="password" placeholder="Contraseña" class="required" required  name="confirmpass" id="confirmpass">
                         </div>
                       </div>
                     </div>
