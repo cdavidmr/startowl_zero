@@ -110,7 +110,7 @@
                         </div>
                         <div class="vd_input-wrapper">
                         <?php if(!empty($paises)):?> 
-                        <select class="selectpicker">
+                        <select class="vd_input-wrapper selectpicker">
                           <option>Seleccione</option>
                         <?php foreach($paises as $pais):?>
                           <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
