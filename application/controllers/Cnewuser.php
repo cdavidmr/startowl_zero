@@ -34,15 +34,15 @@ class Cnewuser extends CI_Controller {
         );
 
 		if (!$resusername && !$resemail) {
-			$this->session->set_flashdata("error","Usuario y correo electronico en uso");
+			$this->session->set_flashdata("error","usuario y correo electronico en uso");
 			redirect(base_url()."cloreg/register");
 		}
 		elseif (!$resusername) {
-			$this->session->set_flashdata("error","Nombre de usuario en uso");
+			$this->session->set_flashdata("error","nombre de usuario en uso");
 			redirect(base_url()."cloreg/register");
 		}
 		elseif (!$resemail) {
-			$this->session->set_flashdata("error","Correo electronico en uso");
+			$this->session->set_flashdata("error","correo electronico en uso");
 			redirect(base_url()."cloreg/register");
 		}
 		else{

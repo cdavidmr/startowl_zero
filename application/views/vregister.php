@@ -25,7 +25,7 @@
                 <?php if($this->session->flashdata("error")):?>
                 <div class="alert alert-danger">
                     <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
-                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong><?php echo $this->session->flashdata("error"); ?></div>
+                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap! </strong><?php echo $this->session->flashdata("error"); ?></div>
                 <?php endif; ?>
 
 <!--                  <div id="register-success" class="alert alert-success" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Registration confirmation has been sent to your email </div>
