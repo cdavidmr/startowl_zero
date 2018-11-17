@@ -30,7 +30,7 @@
 
 <!--                  <div id="register-success" class="alert alert-success" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Registration confirmation has been sent to your email </div>
                   <div id="register-passerror" class="alert alert-danger" style="display:none;"><i class="fa fa-exclamation-circle fa-fw"></i> Your password and Confirm password are not same </div>-->
-                  <form class="form-horizontal"  action="<?php echo base_url(); ?>cnewuser/register" role="form" id="register-form">
+                  <form class="form-horizontal"  action="<?php echo base_url(); ?>cnewuser/register" method="post" role="form" id="register-form">
                   
                   <div class="alert alert-warning vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
