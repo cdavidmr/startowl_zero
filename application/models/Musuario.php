@@ -33,7 +33,7 @@ class Musuario extends CI_Model {
 	}
 
 	public function getEmail($email){
-		$this->db->where("username_usuario", $email);
+		$this->db->where("email_usuario", $email);
 		$resultados = $this->db->get("usuario");
 		if ($resultados->num_rows() > 0) {
 			return false;
