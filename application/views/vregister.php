@@ -38,7 +38,7 @@
                   <div class="alert alert-success vd_hidden">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span>Hemos enviado una confirmacion de registro a tu correo </div>                  
-                    <p>Por favor complete los campos marcados con <span class="vd_red">*</span></p>
+                    <p><span class="vd_red">*</span> Campos obligatorios.</p>
                     <div class="form-group">
                       <div class="col-md-6">
                         <div class="label-wrapper">
