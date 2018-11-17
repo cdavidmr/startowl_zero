@@ -6,7 +6,7 @@
             <div class="row">
               <div class=" col-xs-12">
                 <div class="copyright">
-                     <p>Copyright &copy; 2018 StartOwl. All rights reserved | This site is developed with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://DevOneA.com" target="_blank">developerOneAsociations</a></p>
+                     <!-- <p>Copyright &copy; 2018 StartOwl. All rights reserved | This site is developed with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://DevOneA.com" target="_blank">developerOneAsociations</a></p> -->
                 </div>
               </div>
             </div><!-- row -->
