@@ -134,16 +134,7 @@
                         <div class="vd_input-wrapper" id="password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
                           <input type="password" placeholder="Contraseña" class="required" required  name="password" id="password">
                         </div>
-                      </div>                     
-                      <div class="col-md-4">
-                        <div class="label-wrapper">
-                          <label class="control-label">Confirmar Contraseña <span class="vd_red">*</span></label>
-                        </div>
-                        <div class="vd_input-wrapper" id="confirm-password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
-                          <input type="password" placeholder="Contraseña" class="required" required  name="confirmpass" id="confirmpass">
-                        </div>
                       </div>
-                    </div>
                     </div>
                     <div id="vd_login-error" class="alert alert-danger hidden"><i class="fa fa-exclamation-circle fa-fw"></i> Este Campo es necesario. </div>
                     <div class="form-group">
