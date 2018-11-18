@@ -24,6 +24,11 @@
               <h1>Información</h1>
             </div>
           </div>
+                  <?php if($this->session->flashdata("registrado")):?>
+                    <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
+                    <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span><strong><?php echo $this->session->flashdata("registrado"); ?></strong> </div>              
+                 <?php endif; ?>
           <div class="vd_content-section clearfix">
             <div class="row">
               <div class="col-sm-3">

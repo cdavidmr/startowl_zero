@@ -45,9 +45,13 @@ class Cnewuser extends CI_Controller {
 			$this->session->set_flashdata("error","correo electronico en uso");
 			redirect(base_url()."cloreg/register");
 		}
+		elseif (empty($username)) {
+			$this->session->set_flashdata("error","Ingreso invalido, por favor ingrese sus datos correctamente.");
+			redirect(base_url()."cloreg/register");
+		}
 		else{
-			$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor ingrese su usuario y contraseña.");
-			redirect(base_url()."cloreg/login");
+			$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor verifique su correo electronico.");
+			redirect(base_url()."cprofile/profile");
 		}
     }
     
