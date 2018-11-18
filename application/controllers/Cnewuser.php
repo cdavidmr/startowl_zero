@@ -46,7 +46,6 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		elseif (empty($username)) {
-			$this->session->set_flashdata("error","Ingreso invalido, por favor ingrese sus datos correctamente.");
 			redirect(base_url()."cloreg/register");
 		}
 		else{
