@@ -14,7 +14,7 @@ class Cauth extends CI_Controller {
 			redirect(base_url()."cprofile/profile");
 		}
 		else{
-			$this->load->view("cloreg/login");
+			redirect(base_url()."cloreg/login");
 		}		
 	}
 
