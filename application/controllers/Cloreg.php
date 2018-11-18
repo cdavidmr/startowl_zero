@@ -17,7 +17,7 @@ class Cloreg extends CI_Controller {
 			redirect(base_url()."cprofile/profile");
 		}
 		else{
-			$this->load->view("cloreg/login");
+			$this->load->view(base_url()."cloreg/login");
 		}
     }
     
