@@ -5,7 +5,7 @@ class Chomepage extends CI_Controller {
 
     public function __construct(){
         parent::__construct();		
-        if (!$this->session->userdata("login")) {
+        if ($this->session->userdata("login")) {
 			redirect(base_url()."cprofile/profile");
 		}
         $this->load->view('layout/landing/headhome');
