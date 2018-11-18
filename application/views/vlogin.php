@@ -27,7 +27,7 @@
                   <?php if($this->session->flashdata("error")):?>
                   <div class="alert alert-danger">
                     <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
-                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> Verifica tus datos e intenta ingresar nuevamente. </div>
+                    <span class="vd_alert-icon"><i class="fa fa-exclamation-circle vd_red"></i></span><strong>Oh snap!</strong> <?php echo $this->session->flashdata("error");?> </div>
                   <?php endif; ?> 
 
                   <form class="form-horizontal" id="login-form" action="<?php echo base_url(); ?>cauth/login" role="form" method="post">
