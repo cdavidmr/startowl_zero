@@ -12,9 +12,14 @@ class Cprofile extends CI_Controller {
         $this->load->model("Musuario");
         $this->load->model("Mpais");
 
-
         $this->load->view('layout/head');
         $this->load->view('layout/header');
+    }
+    
+    public function index(){               
+		if ($this->session->userdata("login")) {
+			redirect(base_url()."cprofile/profile");
+		}
     }
     
     public function profile(){
