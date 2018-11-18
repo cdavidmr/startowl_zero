@@ -46,6 +46,7 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		else{
+			$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor ingrese su usuario y contraseña.");
 			redirect(base_url()."cloreg/login");
 		}
     }
