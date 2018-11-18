@@ -23,10 +23,8 @@ class Cnewuser extends CI_Controller {
         $apellido = $this->input->post("apellido");
 		$pais = $this->input->post("cod_pais");
 		$username = $this->input->post("username");
-        $email = $this->input->post("email");
-        if ($this->session->userdata("login")) {
-			# code...
-		}
+		$email = $this->input->post("email");
+		
 		$resusername = $this->Musuario->getUsername(
             strtolower($username)
         );
