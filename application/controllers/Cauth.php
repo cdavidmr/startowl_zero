@@ -24,10 +24,9 @@ class Cauth extends CI_Controller {
 		$res = $this->Musuario->login(strtolower($username), sha1($password));
 
 		if (empty($username)) {
-			$this->session->set_flashdata("error","Verifica tus datos e intenta ingresar nuevamente.");
 			redirect(base_url()."cloreg/login");
 		}
-		elseif (!$res ) {
+		elseif (!$res) {
 			$this->session->set_flashdata("error","Verifica tus datos e intenta ingresar nuevamente.");
 			redirect(base_url()."cloreg/login");
 		}
