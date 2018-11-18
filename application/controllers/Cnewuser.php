@@ -24,7 +24,9 @@ class Cnewuser extends CI_Controller {
 		$pais = $this->input->post("cod_pais");
 		$username = $this->input->post("username");
         $email = $this->input->post("email");
-        
+        if ($this->session->userdata("login")) {
+			# code...
+		}
 		$resusername = $this->Musuario->getUsername(
             strtolower($username)
         );
@@ -46,14 +48,7 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		else{
-			$data  = array(		
-				'cod_usuario' => $resusername->cod_usuario,		
-				'cod_rol' => $res->cod_rol,
-				'username' => $res->username_usuario,
-				'login' => TRUE
-			);
-			$this->session->set_userdata($data);
-			redirect(base_url()."cprofile/profile");
+			redirect(base_url()."cloreg/login");
 		}
     }
     
