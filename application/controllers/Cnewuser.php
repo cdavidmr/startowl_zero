@@ -51,11 +51,11 @@ class Cnewuser extends CI_Controller {
 		}
 		else{
 			$data  = array(		
-				'nom_usuario' => $nombre, 
-				'apell_usuario' => $apellido, 
-				'cod_pais' => $pais, 
-				'email_usuario' => $email, 
-				'username_usuario' => $username, 
+				'nom_usuario' => ucwords($nombre), 
+				'apell_usuario' => ucwords($apellido), 
+				'cod_pais' => ucwords($pais), 
+				'email_usuario' => strtolower($email), 
+				'username_usuario' => strtolower($username), 
 				'pass_usuario' => $password,
 				'cod_rol' => 2,
 				'cod_cuentaest' => 1, 

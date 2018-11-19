@@ -132,16 +132,20 @@
                           <label class="control-label">Contraseña <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
-                          <input type="password" placeholder="Contraseña" class="required" required  name="password" id="password">
+                          <input type="password" data-minlength="6" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
+                          <div class="help-block">Minimum of 6 characters</div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="label-wrapper">
                           <label class="control-label">Confirmar contraseña <span class="vd_red">*</span></label>
                         </div>
-                        <div class="vd_input-wrapper" id="confirm-password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
-                          <input type="password" placeholder="Contraseña" class="required" required  name="confirmpass" id="confirmpass">
+                        <div class="vd_input-wrapper" id="confirm-password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>                          
+                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                        <div class="help-block with-errors"></div>
                         </div>
+                      </div>
+                      <div class="form-group col-sm-6">
                       </div>
                     </div>
                     <div id="vd_login-error" class="alert alert-danger hidden"><i class="fa fa-exclamation-circle fa-fw"></i> Este Campo es necesario. </div>

@@ -58,6 +58,7 @@
 
 
 <!-- Specific Page Agregar Idea Scripts Put Here -->
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js'></script>
 <script type="text/javascript" src='/resources/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'></script>
 <script type="text/javascript" src='/resources/plugins/daterangepicker/moment.min.js'></script>
 <script type="text/javascript" src='/resources/plugins/daterangepicker/daterangepicker.js'></script>
