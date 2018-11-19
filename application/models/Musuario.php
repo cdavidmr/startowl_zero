@@ -44,12 +44,8 @@ class Musuario extends CI_Model {
 		}
 	}
 
-	public function setUser($codigo){
-		$this->db->where("cod_usuario", $codigo);
-		$this->db->from('usuario');
-		$this->db->join('pais', 'usuario.cod_pais = pais.cod_pais');	
-		$resultados = $this->db->get();
-		return $resultados->row();
+	public function newUser($data){
+		return $this->db->insert('usuario',$data);	
 	}
 
 }

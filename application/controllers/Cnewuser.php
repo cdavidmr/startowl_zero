@@ -22,8 +22,9 @@ class Cnewuser extends CI_Controller {
 		$nombre = $this->input->post("nombre");
         $apellido = $this->input->post("apellido");
 		$pais = $this->input->post("cod_pais");
-		$username = $this->input->post("username");
 		$email = $this->input->post("email");
+		$username = $this->input->post("username");
+		$password = $this->input->post("password");
 		
 		$resusername = $this->Musuario->getUsername(
             strtolower($username)
@@ -38,7 +39,7 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		elseif (!$resusername) {
-			$this->session->set_flashdata("error","nombre de usuario en uso");
+			$this->session->set_flashdata("error","username en uso.");
 			redirect(base_url()."cloreg/register");
 		}
 		elseif (!$resemail) {
@@ -49,8 +50,32 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		else{
-			$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor verifique su correo electronico.");
-			redirect(base_url()."cprofile/profile");
+			$data  = array(		
+				'nom_usuario' => $nombre, 
+				'apell_usuario' => $apellido, 
+				'cod_pais' => $pais, 
+				'email_usuario' => $email, 
+				'username_usuario' => $username, 
+				'pass_usuario' => $password,
+				'cod_rol' => 2,
+				'cod_cuentaest' => 1, 
+				'cod_email_estado' => 2,
+				'fecha_registro' => current_date 		
+			);
+
+			if($this->Musuario->newUser($data)){			
+				$data  = array(		
+				'cod_usuario' => $res->cod_usuario,		
+				'cod_rol' => $res->cod_rol,
+				'username' => $res->username_usuario,
+				'login' => TRUE
+				);
+				$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor verifique su correo electronico.");
+				redirect(base_url()."cprofile/profile");
+			}else {
+				$this->session->set_flashdata("error","Problema al registrar los datos, vuelva a intentarlo mas tarde.");
+				redirect(base_url()."cloreg/register");				
+			}
 		}
     }
     

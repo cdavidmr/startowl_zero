@@ -45,7 +45,7 @@
                           <label class="control-label">Nombre <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="first-name-input-wrapper"> <span class="menu-icon"> <i class="fa fa-user"></i> </span>
-                          <input type="text" placeholder="Nombre" class="required" required name="firstname" id="firstname">
+                          <input type="text" placeholder="Nombre" class="required" required name="nombre" id="firstname">
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -53,7 +53,7 @@
                           <label class="control-label">Apellido <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="last-name-input-wrapper"> <span class="menu-icon"> <i class="fa fa-user"></i> </span>
-                          <input type="text" placeholder="Apellido" class="required" required name="lastname" id="lastname">
+                          <input type="text" placeholder="Apellido" class="required" required name="apellido" id="lastname">
                         </div>
                       </div>
                     </div>
@@ -109,14 +109,12 @@
                           <label class="control-label">Pais</label>
                         </div>
                         <div class="vd_input-wrapper">
-                        <?php if(!empty($paises)):?> 
-                        <select class="vd_input-wrapper selectpicker">
-                          <option class="vd_input-wrapper">Seleccione</option>
+                        <select name="cod_pais" class="selectpicker">
+                          <option>Seleccionar</option>
                         <?php foreach($paises as $pais):?>
-                          <option value="<?php echo $pais->cod_pais; ?>" name="<?php echo $pais->nom_pais; ?>"><?php echo $pais->nom_pais; ?></option>
+                          <option value="<?php echo $pais->cod_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                         <?php endforeach; ?>
                         </select>
-                        <?php endif; ?>
                         </div> 
                       </div>
                     </div>
