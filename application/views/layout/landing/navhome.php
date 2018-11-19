@@ -88,10 +88,12 @@
                         </div>
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-10">
-                                <form action="<?php echo base_url(); ?>cmodulo/modulo" class="form-wrap mt-4">
+                                <form action="<?php echo base_url(); ?>cloreg/register" class="form-wrap mt-4">
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <input type="text" placeholder="Categoria de tu idea de Negocio?" class="btn-group1">
-                                        <input type="text" placeholder="País que quieres Emprender?" class="btn-group2">
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput" type="text" name="myCountry" placeholder="País que quieres Emprender...">
+                                        </div>
                                         <button type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>BUSCAR<i class="pe-7s-angle-right"></i></button>
                                     </div>
                                 </form>

@@ -93,6 +93,10 @@
 <script type="text/javascript" src="/resources/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script type="text/javascript" src="/resources/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
+
+<script type="text/javascript" src="/resources/js/paiseshomepage.js"></script>
+
+
 <script type="text/javascript">
 $(window).load(function() 
     {
