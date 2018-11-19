@@ -88,16 +88,13 @@
                         </div>
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-10">
-                                <form action="<?php echo base_url(); ?>cloreg/register" class="form-wrap mt-4">
-                                    <div class="btn-group" role="group" aria-label="Basic example"></div>
-                                        <input type="text" placeholder="Categoria de tu idea de Negocio?" class="btn-group1" required>
-                                        <div class="autocomplete btn-group1">
-                                            <input id="myInput" type="text" name="myCountry" placeholder="País que quieres Emprender..." required>
-                                        </div>
+                                <form action="<?php echo base_url(); ?>cloreg/login" class="form-wrap mt-4">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <input type="text" placeholder="Categoria de tu idea de Negocio?" class="btn-group1">
+                                        <input type="text" placeholder="País que quieres Emprender?" class="btn-group2">
                                         <button type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>BUSCAR<i class="pe-7s-angle-right"></i></button>
-                                    
+                                    </div>
                                 </form>
-                                <script type="text/javascript" src="/resources/js/paiseshomepage.js"></script>
                                 <div class="slider-link">
                                     <a href="#">Negocios Populares</a><span></span> <a href="#">Agregados Recientemente</a>
                                 </div>
