@@ -45,7 +45,7 @@
                           <label class="control-label">Nombre <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="first-name-input-wrapper"> <span class="menu-icon"> <i class="fa fa-user"></i> </span>
-                          <input type="text" placeholder="Nombre" class="required" required name="nombre" id="firstname">
+                          <input type="text" placeholder="Nombres" class="required" required name="nombre" id="firstname">
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -53,7 +53,7 @@
                           <label class="control-label">Apellido <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="last-name-input-wrapper"> <span class="menu-icon"> <i class="fa fa-user"></i> </span>
-                          <input type="text" placeholder="Apellido" class="required" required name="apellido" id="lastname">
+                          <input type="text" placeholder="Apellidos" class="required" required name="apellido" id="lastname">
                         </div>
                       </div>
                     </div>

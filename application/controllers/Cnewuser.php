@@ -19,6 +19,8 @@ class Cnewuser extends CI_Controller {
 	}
 
 	public function register(){
+		date_default_timezone_set('America/Bogota');
+		$date = date('Y-m-d', time());
 		$nombre = $this->input->post("nombre");
         $apellido = $this->input->post("apellido");
 		$pais = $this->input->post("cod_pais");
@@ -56,11 +58,11 @@ class Cnewuser extends CI_Controller {
 				'cod_pais' => ucwords($pais), 
 				'email_usuario' => strtolower($email), 
 				'username_usuario' => strtolower($username), 
-				'pass_usuario' => $password,
+				'pass_usuario' => sha1($password),
 				'cod_rol' => 2,
 				'cod_cuentaest' => 1, 
 				'cod_email_estado' => 2,
-				'fecha_registro' => current_date 		
+				'fecha_registro' => $date 		
 			);
 
 			if($this->Musuario->newUser($data)){			
