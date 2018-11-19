@@ -4,12 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Chomepage extends CI_Controller {
 
     public function __construct(){
-        parent::__construct();	
-		$this->load->model("Mpais");	
+        parent::__construct();		
         if ($this->session->userdata("login")) {
 			redirect(base_url()."cprofile/profile");
-        }
-        $this->Mpais->insert();        
+        }      
 		$this->load->model("Musuario");
         $this->load->view('layout/landing/headhome');
         $this->load->view('layout/landing/navhome');
