@@ -21,8 +21,8 @@ class Cnewuser extends CI_Controller {
 	public function register(){
 		date_default_timezone_set('America/Bogota');
 		$date = date('Y-m-d', time());
-		$nombre = $this->input->post("nombre");
-        $apellido = $this->input->post("apellido");
+		$nombre = strtolower($this->input->post("nombre"));
+        $apellido = strtolower($this->input->post("apellido"));
 		$pais = $this->input->post("cod_pais");
 		$email = $this->input->post("email");
 		$username = $this->input->post("username");
