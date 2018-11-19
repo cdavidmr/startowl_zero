@@ -133,15 +133,15 @@
                         </div>
                         <div class="vd_input-wrapper" id="password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
                           <input type="password" data-minlength="6" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
-                          <div class="help-block">Minimum of 6 characters</div>
                         </div>
+                        <div class="help-block">Minimo 6 caracteres</div>
                       </div>
                       <div class="col-md-4">
                         <div class="label-wrapper">
                           <label class="control-label">Confirmar contraseña <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper" id="confirm-password-input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>                          
-                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, No coinciden" placeholder="Confirm" required>
                         <div class="help-block with-errors"></div>
                         </div>
                       </div>
