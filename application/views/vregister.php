@@ -132,7 +132,7 @@
                           <label class="control-label">Contraseña <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper"> <span class="menu-icon"> <i class="fa fa-lock"></i> </span>
-                          <input type="password" data-minlength="6" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
+                          <input type="password" data-minlength="6" class="form-control" name="password" id="inputPassword" placeholder="contraseña" required>
                         </div>
                         <div class="help-block">Minimo 6 caracteres</div>
                       </div>
@@ -141,7 +141,7 @@
                           <label class="control-label">Confirmar contraseña <span class="vd_red">*</span></label>
                         </div>
                         <div class="vd_input-wrapper"><span class="menu-icon"> <i class="fa fa-lock"></i> </span>                          
-                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, No coinciden" placeholder="Confirm" required>
+                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, No coinciden" placeholder="confirmar" required>
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>

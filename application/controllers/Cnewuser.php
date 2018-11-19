@@ -52,26 +52,15 @@ class Cnewuser extends CI_Controller {
 			redirect(base_url()."cloreg/register");
 		}
 		else{
-			$data  = array(		
-				'nom_usuario' => ucwords($nombre), 
-				'apell_usuario' => ucwords($apellido), 
-				'cod_pais' => ucwords($pais), 
-				'email_usuario' => strtolower($email), 
-				'username_usuario' => strtolower($username), 
-				'pass_usuario' => sha1($password),
-				'cod_rol' => 2,
-				'cod_cuentaest' => 1, 
-				'cod_email_estado' => 2,
-				'fecha_registro' => $date 		
-			);
-
-			if($this->Musuario->newUser($data)){			
+			if($this->Musuario->newUser($data)){	
+				$res = $this->Musuario->login(strtolower($username), sha1($password));						
 				$data  = array(		
 				'cod_usuario' => $res->cod_usuario,		
 				'cod_rol' => $res->cod_rol,
 				'username' => $res->username_usuario,
 				'login' => TRUE
 				);
+				$this->session->set_userdata($data);
 				$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor verifique su correo electronico.");
 				redirect(base_url()."cprofile/profile");
 			}else {
