@@ -109,8 +109,14 @@
                           <label class="control-label">Pais</label>
                         </div>
                         <div class="vd_input-wrapper">
+                        <select title="Pick a number" class="selectpicker">
+  <option>Select...</option>
+  <option>One</option>
+  <option>Two</option>
+  <option>Three</option>
+</select>
                         <select name="cod_pais" class="selectpicker">
-                          <option>Seleccionar</option>
+                          <option class="vd_input-wrapper" >Seleccionar</option>
                         <?php foreach($paises as $pais):?>
                           <option value="<?php echo $pais->cod_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                         <?php endforeach; ?>
