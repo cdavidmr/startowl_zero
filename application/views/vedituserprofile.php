@@ -478,7 +478,7 @@
                     </div>
                     <!-- panel-body -->
                     <div class="pd-20 center-block">
-                      <button class="btn vd_btn vd_bg-green col-md-offset-3" type="submit"><span class="menu-icon"><i class="fa fa-fw fa-check"></i></span> Actualizar</button>
+                      <input class="btn vd_btn vd_bg-green col-md-offset-3" type="submit" value="Actualizar">
                     </div>
                   </form>
                 </div>
