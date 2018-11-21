@@ -41,8 +41,6 @@ class Ceditprofile extends CI_Controller {
         $facebook = strtolower($this->input->post("facebook"));
 		$twitter = strtolower($this->input->post("twitter"));
 		
-		$res = $this->Musuario->getImg($username);
-		$imagen_profile = $res->imagen_usuario; 
 		//Imagen miniatura y nombre
 		if (file_exists($nombre_img)) {
 			$ext = pathinfo($nombre_img, PATHINFO_EXTENSION);
@@ -54,6 +52,9 @@ class Ceditprofile extends CI_Controller {
 			$image->resize(205, 205);
 			$image->save($directorio . $nombre_img);
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
+		}else{
+			$res = $this->Musuario->getImg($username);
+			$imagen_profile = $res->imagen_usuario; 
 		}
 		if (!empty($password)) {
 			$data  = array(		

@@ -49,7 +49,7 @@ class Musuario extends CI_Model {
 	}
 	
 	public function editProfile($codigo,$data){
-		$this->db->where("cod_usuario", $codigo);
+		$this->db->where('cod_usuario', $codigo);
 		return $this->db->update('usuario',$data);	
 	}
 
