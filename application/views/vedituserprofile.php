@@ -81,7 +81,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="email"  placeholder="<?php echo $usuario->email_usuario; ?>" value="<?php echo $usuario->email_usuario; ?>" disabled>
+                                  <input type="email" placeholder="<?php echo $usuario->email_usuario; ?>" value="<?php echo $usuario->email_usuario; ?>" disabled>
                                 </div>
                                 <!-- col-xs-12 -->
                                 <div class="col-xs-2">
@@ -134,7 +134,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="password" class="width-40"  placeholder="nueva contraseña">
+                                  <input name="password" type="password" class="width-40"  placeholder="nueva contraseña">
                                 </div>
                                 <!-- col-xs-12 --> 
                               </div>
@@ -166,7 +166,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="<?php echo $usuario->nom_usuario; ?>" value="<?php echo $usuario->nom_usuario; ?>" required>
+                                  <input type="text" name="nombre" placeholder="<?php echo $usuario->nom_usuario; ?>" value="<?php echo $usuario->nom_usuario; ?>" required>
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -192,7 +192,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text" placeholder="<?php echo $usuario->apell_usuario; ?>" value="<?php echo $usuario->apell_usuario; ?>" required>
+                                  <input type="text" name="apellido" placeholder="<?php echo $usuario->apell_usuario; ?>" value="<?php echo $usuario->apell_usuario; ?>" required>
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -254,7 +254,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text" id="datepicker-normal" class="width-40" placeholder="<?php echo $usuario->fnacimiento_usuario; ?>" value="<?php echo $usuario->fnacimiento_usuario; ?>">
+                                  <input name="fnacimento" type="text" id="datepicker-normal" class="width-40" placeholder="<?php echo $usuario->fnacimiento_usuario; ?>" value="<?php echo $usuario->fnacimiento_usuario; ?>">
                                 </div>
                                 <!-- col-xs-12 -->
                                 <div class="col-xs-2">
@@ -281,7 +281,7 @@
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
                                 <select name="cod_pais" class="vd_input-wrapper">
-                                <option value="<?php echo $usuario->cod_pais; ?>">value="<?php echo $usuario->nom_pais; ?>"</option>
+                                <option value="<?php echo $usuario->cod_pais; ?>"><?php echo $usuario->nom_pais; ?></option>
                                 <?php foreach($paises as $pais):?>
                                   <option value="<?php echo $pais->cod_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                                 <?php endforeach; ?>
@@ -343,7 +343,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <textarea rows="3" placeholder="Breve descripción sobre mi..."><?php echo $usuario->descripcion_usuario; ?></textarea>
+                                  <textarea name="descripcion" rows="3" placeholder="Breve descripción sobre mi..."><?php echo $usuario->descripcion_usuario; ?></textarea>
                                 </div>
                                 <!-- col-xs-12 -->
                                 <div class="col-xs-2">
@@ -371,7 +371,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="<?php echo $usuario->tel_usuario; ?>" value="<?php echo $usuario->tel_usuario; ?>">
+                                  <input name="telefono" type="text"  placeholder="<?php echo $usuario->tel_usuario; ?>" value="<?php echo $usuario->tel_usuario; ?>">
                                 </div>
                                 <!-- col-xs-12 -->
                                 <div class="col-xs-2">
@@ -397,7 +397,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="sitios web">
+                                  <input name="web" type="text"  placeholder="sitios web">
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -423,7 +423,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="facebook">
+                                  <input name="facebook" type="text"  placeholder="facebook" value="<?php echo $usuario->facebook_usuario; ?>">
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -449,7 +449,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text" placeholder="twitter">
+                                  <input name="twitter" type="text" placeholder="twitter" value="<?php echo $usuario->facebook_usuario; ?>">
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">

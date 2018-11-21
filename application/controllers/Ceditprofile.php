@@ -39,7 +39,7 @@ class Ceditprofile extends CI_Controller {
 		
         // redes sociales
         $facebook = strtolower($this->input->post("facebook"));
-		$twitter = strtolower($this->input->post("web"));
+		$twitter = strtolower($this->input->post("twitter"));
 		
 		//Imagen miniatura y nombre
 		if (file_exists($nombre_img)) {
