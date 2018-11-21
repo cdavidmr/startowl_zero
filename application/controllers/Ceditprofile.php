@@ -56,31 +56,6 @@ class Ceditprofile extends CI_Controller {
 			$imagen_profile = $this->session->userdata("img_profile");
 		}
 		//End Imagen
-		
-		$resusername = $this->Musuario->getUsername(
-            strtolower($username)
-        );
-        
-		$resemail = $this->Musuario->getEmail(
-            strtolower($email)
-        );
-
-		if (!$resusername && !$resemail) {
-			$this->session->set_flashdata("error","usuario y correo electronico en uso");
-			redirect(base_url()."cprofile/editprofile");
-		}
-		elseif (!$resusername) {
-			$this->session->set_flashdata("error","username en uso.");
-			redirect(base_url()."cprofile/editprofile");
-		}
-		elseif (!$resemail) {
-			$this->session->set_flashdata("error","correo electronico en uso");
-			redirect(base_url()."cprofile/editprofile");
-		}
-		elseif (empty($username)) {
-			redirect(base_url()."cprofile/editprofile");
-		}
-		else{
 			if (!empty($password)) {
 				$data  = array(		
 					'nom_usuario' => ucwords($nombre), 
@@ -119,8 +94,7 @@ class Ceditprofile extends CI_Controller {
 			}else {
 				$this->session->set_flashdata("error","Problema al registrar los datos, vuelva a intentarlo mas tarde.");
 				redirect(base_url()."cprofile/editprofile");				
-			}
-		}
+			}		
     }
     
 }
