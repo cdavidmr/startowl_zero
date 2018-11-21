@@ -44,7 +44,7 @@
                   <div class="panel-heading no-title"> </div>
                   <form class="form-horizontal"  role="form" action="ceditprofile/update" method="post" enctype="multipart/form-data">
                     <div  class="panel-body">
-                      <h2 class="mgbt-xs-20"><span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre"> <?php echo $usuario->nom_usuario; ?> </span><span>.</span></h2>
+                      <h2 class="mgbt-xs-20"><span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre"><?php echo $usuario->nom_usuario; ?> </span><span>.</span></h2>
                       <br/>
                       <div class="row">
                         <div class="col-sm-3 mgbt-xs-20">
