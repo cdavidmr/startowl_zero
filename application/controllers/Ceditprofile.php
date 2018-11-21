@@ -88,7 +88,8 @@ class Ceditprofile extends CI_Controller {
 					'twitter_usuario' => $twitter
 				);
 			}
-			if($this->Musuario->editProfile($data)){		
+			$codigo = $this->session->userdata("cod_usuario");
+			if($this->Musuario->editProfile($codigo,$data)){		
 				$this->session->set_flashdata("right","Datos actualizados exitosamente!, vuelve a iniciar sesion para ver los resultados");
 				redirect(base_url()."cprofile/editprofile");
 			}else {
