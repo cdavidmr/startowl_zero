@@ -281,7 +281,7 @@
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
                                   <select class="width-40">
-                                    <option><?php echo $usuario->nom_pais; ?></option>
+                                    <option value="<?php echo $usuario->cod_pais; ?>">seleccionar</option>
                                   <?php foreach($paises as $pais):?>
                                     <option value="<?php echo $pais->cod_pais; ?>"><?php echo $pais->nom_pais; ?></option>
                                   <?php endforeach; ?>
