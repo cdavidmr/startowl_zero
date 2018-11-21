@@ -34,16 +34,12 @@ class Cprofile extends CI_Controller {
     }
     
     public function editprofile(){
-        $codigo = $this->session->userdata("cod_usuario");
-        
+        $codigo = $this->session->userdata("cod_usuario");        
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
-            );			
-            
-            $data2  = array(		
                 'paises' => $this->Mpais->getPais(),
-            );
-        $this->load->view('vedituserprofile',$data,$data2);
+            );			
+        $this->load->view('vedituserprofile',$data);
         $this->load->view('layout/footer');
     }
         
