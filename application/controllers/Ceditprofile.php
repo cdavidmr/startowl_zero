@@ -42,15 +42,15 @@ class Ceditprofile extends CI_Controller {
 		$twitter = strtolower($this->input->post("twitter"));
 		
 		//Imagen miniatura y nombre
-		if (!empty($nombre_img)) {
+		if (file_exists($nombre_img)) {
 			$ext = pathinfo($nombre_img, PATHINFO_EXTENSION);
 			$s = strtoupper(md5(uniqid(rand(), true)));	     
 			$nombre_img = time() . "_" . substr($s, 12, 4) . "." . $ext;
-			$directorio = base_url() . 'resources/profile/img/';
+			$directorio = $_SERVER['DOCUMENT_ROOT'] . 'resources/profile/img/';
 			move_uploaded_file($_FILES['img_profile']['tmp_name'], $directorio . $nombre_img);
 			$image = new ImageResize($directorio . $nombre_img);
 			$image->resize(205, 205);
-			$image->save(base_url() . $nombre_img);
+			$image->save($directorio . $nombre_img);
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
 		}else{
 			$imagen_profile = $this->session->userdata("img_profile");
