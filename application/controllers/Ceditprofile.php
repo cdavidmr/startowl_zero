@@ -114,7 +114,7 @@ class Ceditprofile extends CI_Controller {
 				);
 			}
 			if($this->Musuario->editProfile($data)){		
-				$this->session->set_flashdata("right","Datos actualizados exitosamente!");
+				$this->session->set_flashdata("right","Datos actualizados exitosamente!, vuelve a iniciar sesion para ver los resultados");
 				redirect(base_url()."cprofile/editprofile");
 			}else {
 				$this->session->set_flashdata("error","Problema al registrar los datos, vuelva a intentarlo mas tarde.");
