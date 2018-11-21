@@ -107,7 +107,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                <input type="text" placeholder="<?php echo $usuario->username_usuario; ?>" value="<?php echo $usuario->username_usuario; ?>">
+                                <input type="text" placeholder="<?php echo $usuario->username_usuario; ?>" value="<?php echo $usuario->username_usuario; ?>" disabled>
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
