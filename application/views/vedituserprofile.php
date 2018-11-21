@@ -103,11 +103,11 @@
                           <!-- form-group -->
                           
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">Nombre de Usuario</label>
+                            <label class="col-sm-3 control-label">Username</label>
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="<?php echo $usuario->username_usuario; ?>" values="<?php echo $usuario->username_usuario; ?>">
+                                <input type="text" placeholder="<?php echo $usuario->username_usuario; ?>" value="<?php echo $usuario->username_usuario; ?>">
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -134,7 +134,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="password" class="width-40"  placeholder="contraseña">
+                                  <input type="password" class="width-40"  placeholder="contraseña" value="<?php echo $usuario->pass_usuario; ?>">
                                 </div>
                                 <!-- col-xs-12 --> 
                               </div>
