@@ -134,7 +134,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="password" class="width-40"  placeholder="contraseña" value="<?php echo $usuario->pass_usuario; ?>">
+                                  <input type="password" class="width-40"  placeholder="contraseña" value="<?php echo sha1($usuario->pass_usuario); ?>">
                                 </div>
                                 <!-- col-xs-12 --> 
                               </div>
