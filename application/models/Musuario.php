@@ -56,8 +56,7 @@ class Musuario extends CI_Model {
 	public function getImg($username){
 		$this->db->where("username_usuario", $username);
 		$resultados = $this->db->get('usuario');
-		return $resultados->row('imagen_usuario');
+		return $resultados->row();
 	}
-
 
 }

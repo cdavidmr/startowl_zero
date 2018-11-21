@@ -54,7 +54,7 @@ class Ceditprofile extends CI_Controller {
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
 		}else{
 			$res = $this->Musuario->getImg($username);
-			$imagen_profile = $res; 
+			$imagen_profile = $res->imagen_usuario; 
 		}
 		if (!empty($password)) {
 			$data  = array(		
