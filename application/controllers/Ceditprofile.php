@@ -32,7 +32,6 @@ class Ceditprofile extends CI_Controller {
 		$username = $this->input->post("username");
 		$password = $this->input->post("password");
 		$nombre_img = $_FILES['img_profile']['name'];
-		$imagen_profile = "";
 		$fnacimiento = $this->input->post("fnacimiento");
 		$descripcion = strtolower($this->input->post("descripcion"));
 		$tel = $this->input->post("telefono");
@@ -52,7 +51,9 @@ class Ceditprofile extends CI_Controller {
 			$image = new ImageResize($directorio . $nombre_img);
 			$image->resize(205, 205);
 			$image->save($directorio . $nombre_img);
-			$imagen_profile = 'resources/profile/img/' . $nombre_img; 
+			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
+		}else{
+			$imagen_profile = $this->session->userdata("img_profile");
 		}
 		//End Imagen
 		

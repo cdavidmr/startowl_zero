@@ -27,6 +27,7 @@ class Cnewuser extends CI_Controller {
 		$email = $this->input->post("email");
 		$username = $this->input->post("username");
 		$password = $this->input->post("password");
+		$imagen = "/resources/profile/img/avatar.jpg";
 		
 		$resusername = $this->Musuario->getUsername(
             strtolower($username)
@@ -62,6 +63,7 @@ class Cnewuser extends CI_Controller {
 				'cod_rol' => 2,
 				'cod_cuentaest' => 1, 
 				'cod_email_estado' => 2,
+				'imagen_usuario' => $imagen,
 				'fecha_registro' => $date 		
 			);
 			if($this->Musuario->newUser($data)){	
@@ -69,6 +71,7 @@ class Cnewuser extends CI_Controller {
 				$data  = array(		
 				'cod_usuario' => $res->cod_usuario,		
 				'cod_rol' => $res->cod_rol,
+				'img_profile' => $res->imagen_usuario,
 				'username' => $res->username_usuario,
 				'login' => TRUE
 				);
