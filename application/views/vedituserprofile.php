@@ -66,7 +66,7 @@
                                     </tr>
                                     <tr>
                                       <td>Miembro desde</td>
-                                      <td> <?php echo $usuario->fecha_registro('mon-Y-d'); ?></td>
+                                      <td> <?php echo $usuario->fecha_registro; ?></td>
                                     </tr>
                                   </tbody>
                                 </table>
