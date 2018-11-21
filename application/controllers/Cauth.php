@@ -33,7 +33,8 @@ class Cauth extends CI_Controller {
 		else{
 			$data  = array(		
 				'cod_usuario' => $res->cod_usuario,		
-				'cod_rol' => $res->cod_rol,
+				'cod_rol' => $res->cod_rol,	
+				'img_profile' => $res->imagen_usuario,
 				'username' => $res->username_usuario,
 				'login' => TRUE
 			);

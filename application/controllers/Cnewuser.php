@@ -73,7 +73,7 @@ class Cnewuser extends CI_Controller {
 				'login' => TRUE
 				);
 				$this->session->set_userdata($data);
-				$this->session->set_flashdata("registrado","Se ha registrado exitosamente, por favor verifique su correo electronico.");
+				$this->session->set_flashdata("right","Se ha registrado exitosamente, por favor verifique su correo electronico.");
 				redirect(base_url()."cprofile/profile");
 			}else {
 				$this->session->set_flashdata("error","Problema al registrar los datos, vuelva a intentarlo mas tarde.");

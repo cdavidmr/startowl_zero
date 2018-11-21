@@ -366,7 +366,7 @@
     <li id="top-menu-profile" class="profile mega-li"> 
         <a href="#" class="mega-link"  data-action="click-trigger"> 
             <span  class="mega-image">
-                <img src="/resources/img/avatar/avatar.jpg" alt="example image" />               
+                <img src="<?php echo $this->session->userdata("img_profile"); ?>" alt="example image" />               
             </span>
             <span class="mega-name">
                 <?php echo $this->session->userdata("username"); ?> <i class="fa fa-caret-down fa-fw"></i> 
@@ -394,7 +394,7 @@
             </div> 
         </div> 
       </div>     
-  
+
     </li>               
        
     <li id="top-menu-settings" class="one-big-icon hidden-xs hidden-sm mega-li" data-intro="<strong>Toggle Right Navigation </strong><br/>On smaller device such as tablet or phone you can click on the middle content to close the right or left navigation." data-step=2 data-position="left"> 

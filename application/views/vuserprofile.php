@@ -24,7 +24,7 @@
               <h1>Información</h1>
             </div>
           </div>
-                  <?php if($this->session->flashdata("registrado")):?>
+                  <?php if($this->session->flashdata("right")):?>
                     <div class="alert alert-success">
                     <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
                     <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span><strong><?php echo $this->session->flashdata("registrado"); ?></strong> </div>              
@@ -35,7 +35,7 @@
                 <div class="panel widget light-widget panel-bd-top">
                   <div class="panel-heading no-title"> </div>
                   <div class="panel-body">
-                    <div class="text-center vd_info-parent"> <img alt="example image" src="/resources/img/avatar/avatar.jpg"> </div>
+                    <div class="text-center vd_info-parent"> <img alt="example image" src="<?php echo $usuario->imagen_usuario; ?>"> </div>
                     <div class="row">
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-green btn-xs btn-block no-br"><i class="fa fa-check-circle append-icon" ></i>Amigos</a> </div>
                       <div class="col-xs-12"> <a class="btn vd_btn vd_bg-grey btn-xs btn-block no-br"><i class="fa fa-envelope append-icon"></i>Enviar un Mensaje</a> </div>

@@ -38,8 +38,12 @@ class Cprofile extends CI_Controller {
         
 			$data  = array(		
                 'usuario' => $this->Musuario->getProfile($codigo),
+            );			
+            
+            $data2  = array(		
+                'paises' => $this->Mpais->getPais(),
             );
-        $this->load->view('vedituserprofile',$data);
+        $this->load->view('vedituserprofile',$data,$data2);
         $this->load->view('layout/footer');
     }
         
