@@ -53,36 +53,38 @@ class Ceditprofile extends CI_Controller {
 			$image->save($directorio . $nombre_img);
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
 		}else{
-			if (!empty($password)) {
-				$data  = array(		
-					'nom_usuario' => ucwords($nombre), 
-					'apell_usuario' => ucwords($apellido), 
-					'cod_pais' => ucwords($pais), 
-					// 'email_usuario' => strtolower($email), 
-					// 'username_usuario' => strtolower($username), 
-					'pass_usuario' => sha1($password),	 
-					'imagen_usuario' => $imagen_profile,	 	 
-					'descripcion_usuario' => $descripcion,	 
-					'tel_usuario' => $tel,	 
-					'webpage_usuario' => $web,	 
-					'facebook_usuario' => $facebook,	 
-					'twitter_usuario' => $twitter
-				);
-			}else{
-				$data  = array(		
-					'nom_usuario' => ucwords($nombre), 
-					'apell_usuario' => ucwords($apellido), 
-					'cod_pais' => ucwords($pais), 
-					// 'email_usuario' => strtolower($email), 
-					// 'username_usuario' => strtolower($username),
-					'imagen_usuario' => $imagen_profile, 		 
-					'descripcion_usuario' => $descripcion,	 
-					'tel_usuario' => $tel,	 
-					'webpage_usuario' => $web,	 
-					'facebook_usuario' => $facebook,	 
-					'twitter_usuario' => $twitter
-				);
-			}
+			$res = $this->Musuario->getImg($username);
+			$imagen_profile = $res; 
+		}
+		if (!empty($password)) {
+			$data  = array(		
+				'nom_usuario' => ucwords($nombre), 
+				'apell_usuario' => ucwords($apellido), 
+				'cod_pais' => ucwords($pais), 
+				// 'email_usuario' => strtolower($email), 
+				// 'username_usuario' => strtolower($username), 
+				'pass_usuario' => sha1($password),	 
+				'imagen_usuario' => $imagen_profile,	 	 
+				'descripcion_usuario' => $descripcion,	 
+				'tel_usuario' => $tel,	 
+				'webpage_usuario' => $web,	 
+				'facebook_usuario' => $facebook,	 
+				'twitter_usuario' => $twitter
+			);
+		}else{
+			$data  = array(		
+				'nom_usuario' => ucwords($nombre), 
+				'apell_usuario' => ucwords($apellido), 
+				'cod_pais' => ucwords($pais), 
+				// 'email_usuario' => strtolower($email), 
+				// 'username_usuario' => strtolower($username),
+				'imagen_usuario' => $imagen_profile, 		 
+				'descripcion_usuario' => $descripcion,	 
+				'tel_usuario' => $tel,	 
+				'webpage_usuario' => $web,	 
+				'facebook_usuario' => $facebook,	 
+				'twitter_usuario' => $twitter
+			);
 		}
 		//End Imagen
 			$codigo = $this->session->userdata("cod_usuario");
