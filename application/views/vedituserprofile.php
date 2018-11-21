@@ -44,14 +44,14 @@
                   <div class="panel-heading no-title"> </div>
                   <form class="form-horizontal"  role="form" action="ceditprofile/update" method="post" enctype="multipart/form-data">
                     <div  class="panel-body">
-                      <h2 class="mgbt-xs-20"> <?php echo $usuario->nom_usuario; ?> <span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre">Maria</span><span>.</span></h2>
+                      <h2 class="mgbt-xs-20"><span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre"> <?php echo $usuario->nom_usuario; ?> </span><span>.</span></h2>
                       <br/>
                       <div class="row">
                         <div class="col-sm-3 mgbt-xs-20">
                           <div class="form-group">
                             <div class="col-xs-12">
                               <div class="form-img text-center mgbt-xs-15"> <img alt="example image" src="<?php echo $usuario->imagen_usuario; ?>"> </div>
-                              <div class="form-img-action text-center mgbt-xs-20"> <input class="btn vd_btn  vd_bg-blue fa fa-cloud-upload append-icon" type="file" name="img_profile" accept="image/*" value="Subir foto"></div>
+                              <div class="form-img-action text-center mgbt-xs-20"> <input type="file" name="img_profile" accept="image/*" value="Subir foto"></div>
                               <br/>
                               <div>
                                 <table class="table table-striped table-hover">
@@ -107,7 +107,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="<?php echo $usuario->usurname_usuario; ?>" values="<?php echo $usuario->username_usuario; ?>">
+                                  <input type="text"  placeholder="<?php echo $usuario->username_usuario; ?>" values="<?php echo $usuario->username_usuario; ?>">
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
