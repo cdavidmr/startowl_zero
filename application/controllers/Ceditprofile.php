@@ -53,9 +53,6 @@ class Ceditprofile extends CI_Controller {
 			$image->save($directorio . $nombre_img);
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
 		}else{
-			$imagen_profile = $this->session->userdata("img_profile");
-		}
-		//End Imagen
 			if (!empty($password)) {
 				$data  = array(		
 					'nom_usuario' => ucwords($nombre), 
@@ -77,8 +74,8 @@ class Ceditprofile extends CI_Controller {
 					'apell_usuario' => ucwords($apellido), 
 					'cod_pais' => ucwords($pais), 
 					// 'email_usuario' => strtolower($email), 
-					// 'username_usuario' => strtolower($username), 	 
-					'imagen_usuario' => $imagen_profile,		 
+					// 'username_usuario' => strtolower($username),
+					'imagen_usuario' => $imagen_profile, 		 
 					'descripcion_usuario' => $descripcion,	 
 					'tel_usuario' => $tel,	 
 					'webpage_usuario' => $web,	 
@@ -86,6 +83,8 @@ class Ceditprofile extends CI_Controller {
 					'twitter_usuario' => $twitter
 				);
 			}
+		}
+		//End Imagen
 			$codigo = $this->session->userdata("cod_usuario");
 			if($this->Musuario->editProfile($codigo,$data)){		
 				$this->session->set_flashdata("right","Datos actualizados exitosamente!, vuelve a iniciar sesion para ver los resultados");
