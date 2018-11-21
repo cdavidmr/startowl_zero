@@ -42,7 +42,7 @@ class Ceditprofile extends CI_Controller {
 		$twitter = strtolower($this->input->post("twitter"));
 		
 		//Imagen miniatura y nombre
-		if (file_exists($nombre_img)) {
+		if (!empty($nombre_img)) {
 			$ext = pathinfo($nombre_img, PATHINFO_EXTENSION);
 			$s = strtoupper(md5(uniqid(rand(), true)));	     
 			$nombre_img = time() . "_" . substr($s, 12, 4) . "." . $ext;
