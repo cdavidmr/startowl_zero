@@ -81,7 +81,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="email"  placeholder="<?php echo $usuario->email_usuario; ?>" value="<?php echo $usuario->email_usuario; ?>">
+                                  <input type="email"  placeholder="<?php echo $usuario->email_usuario; ?>" value="<?php echo $usuario->email_usuario; ?>" disabled>
                                 </div>
                                 <!-- col-xs-12 -->
                                 <div class="col-xs-2">
@@ -134,7 +134,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="password" class="width-40"  placeholder="contraseña" value="<?php echo sha1($usuario->pass_usuario); ?>">
+                                  <input type="password" class="width-40"  placeholder="nueva contraseña">
                                 </div>
                                 <!-- col-xs-12 --> 
                               </div>
@@ -166,7 +166,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text"  placeholder="<?php echo $usuario->nom_usuario; ?>" value="<?php echo $usuario->nom_usuario; ?>">
+                                  <input type="text"  placeholder="<?php echo $usuario->nom_usuario; ?>" value="<?php echo $usuario->nom_usuario; ?>" required>
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
@@ -192,7 +192,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="text" placeholder="<?php echo $usuario->apell_usuario; ?>" value="<?php echo $usuario->apell_usuario; ?>">
+                                  <input type="text" placeholder="<?php echo $usuario->apell_usuario; ?>" value="<?php echo $usuario->apell_usuario; ?>" required>
                                 </div>
                                 <!-- col-xs-9 -->
                                 <div class="col-xs-2">
