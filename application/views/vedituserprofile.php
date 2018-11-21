@@ -149,7 +149,7 @@
                             <div class="col-sm-9 controls">
                               <div class="row mgbt-xs-0">
                                 <div class="col-xs-9">
-                                  <input type="password" class="width-40"  placeholder="confirmación de contraseña">
+                                  <input type="password" class="width-40"  placeholder="confirmar">
                                 </div>
                                 <!-- col-xs-12 --> 
                               </div>
@@ -282,9 +282,9 @@
                                 <div class="col-xs-9">
                                   <select class="width-40">
                                     <option><?php echo $usuario->nom_pais; ?></option>
-                                    <?php foreach($paises as $pais):?>
+                                  <?php foreach($paises as $pais):?>
                                     <option value="<?php echo $pais->cod_pais; ?>"><?php echo $pais->nom_pais; ?></option>
-                                    <?endforeach; ?>
+                                  <?php endforeach; ?>
                                   </select>
                                 </div>
                                 <!-- col-xs-9 -->
