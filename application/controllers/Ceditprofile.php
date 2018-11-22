@@ -36,7 +36,8 @@ class Ceditprofile extends CI_Controller {
             $file_info = $this->upload->data();
 
 			$imgname = $this->crearMiniatura($file_info['file_name'],$file_info['file_ext']);
-			
+			$path = 'uploads/thumbs/'.$file_info['file_name'];
+			unlink($path);
             return '/uploads/thumbs/' . $imgname;
 		} 
 		else {
@@ -47,7 +48,7 @@ class Ceditprofile extends CI_Controller {
 	function crearMiniatura($filename,$ext){
 
 		$s = strtoupper(md5(uniqid(rand(),true)));
-		$nom_img = time() . "_" . substr($s, 12,4) . "." . $ext;
+		$nom_img = time() . "_" . substr($s, 12,4) . $ext;
 
         $config['image_library'] = 'gd2';
         $config['source_image'] = 'uploads/thumbs/'.$filename;
