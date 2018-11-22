@@ -41,7 +41,9 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="panel widget light-widget">
-                  <div class="panel-heading no-title"> </div>
+                  <div class="panel-heading no-title"> </div>  
+                  <?=@$error?>                
+                  <span><?php echo validation_errors(); ?></span>
                   <form class="form-horizontal"  role="form" action="<?php echo base_url(); ?>ceditprofile/update" method="post" enctype="multipart/form-data">
                     <div  class="panel-body">
                       <h2 class="mgbt-xs-20"><span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre"><?php echo $usuario->nom_usuario; ?></span><span>.</span></h2>
@@ -51,7 +53,7 @@
                           <div class="form-group">
                             <div class="col-xs-12">
                               <div class="form-img text-center mgbt-xs-15"> <img alt="example image" src="<?php echo $usuario->imagen_usuario; ?>"> </div>
-                              <div class="form-img-action text-center mgbt-xs-20"> <input type="file" name="img_profile" accept="image/*"></div>
+                              <div class="form-img-action text-center mgbt-xs-20"> <input type="file" name="imagenperfil" accept="image/*"></div>
                               <br/>
                               <div>
                                 <table class="table table-striped table-hover">

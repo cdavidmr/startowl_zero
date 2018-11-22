@@ -31,7 +31,7 @@ class Ceditprofile extends CI_Controller {
 		// $email = $this->input->post("email");
 		// $username = $this->input->post("username");
 		$password = $this->input->post("password");
-		$nombre_img = $_FILES['img_profile']['name'];
+		$nombre_img = $_FILES['imagenperfil']['name'];
 		$fnacimiento = $this->input->post("fnacimiento");
 		$descripcion = strtolower($this->input->post("descripcion"));
 		$tel = $this->input->post("telefono");
@@ -53,8 +53,7 @@ class Ceditprofile extends CI_Controller {
 			$image->save($directorio . $nombre_img);
 			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
 		}else{
-			$res = $this->Musuario->getImg($username);
-			$imagen_profile = $res->imagen_usuario; 
+			$imagen_profile = $this->session->userdata("img_profile"); 
 		}
 		if (!empty($password)) {
 			$data  = array(		
