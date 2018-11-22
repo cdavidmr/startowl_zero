@@ -35,8 +35,10 @@ class Ceditprofile extends CI_Controller {
         if ($this->upload->do_upload("fileImagen")) {
             $file_info = $this->upload->data();
 
-			$this->crearMiniatura($file_info['file_name'],$file_info['file_ext']);
-            return '/uploads/thumbs/' . $file_info['file_name'];
+			$imgname = $this->crearMiniatura($file_info['file_name'],$file_info['file_ext']);
+			$path = 'uploads/thumbs/'.$file_info['file_name'];
+			unlink($path);
+            return '/uploads/thumbs/' . $imgname;
 		} 
 		else {
 			return $this->session->userdata("img_profile");          
@@ -58,8 +60,7 @@ class Ceditprofile extends CI_Controller {
         $config['height'] = 205;
         $this->load->library('image_lib', $config); 
 		$this->image_lib->resize();
-		$path = 'uploads/thumbs/'.$filename;
-		unlink($path);
+		return $nom_img;
     }
 
 	public function update(){
