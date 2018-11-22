@@ -117,7 +117,7 @@ class Ceditprofile extends CI_Controller {
 				// 'username_usuario' => strtolower($username),
 				'imagen_usuario' => $imagen, 		 
 				'descripcion_usuario' => $descripcion,	 
-				'tel_usuario' => $tel,	 
+				'tel_usuario' => intval($tel),	 
 				'webpage_usuario' => $web,	 
 				'facebook_usuario' => $facebook,	 
 				'twitter_usuario' => $twitter
