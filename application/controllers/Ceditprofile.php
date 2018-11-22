@@ -36,7 +36,7 @@ class Ceditprofile extends CI_Controller {
             $file_info = $this->upload->data();
 
 			$this->crearMiniatura($file_info['file_name'],$file_info['file_ext']);
-            return '/uploads/thumbs/' . $nom_img;
+            return '/uploads/thumbs/' . $file_info['file_name'];
 		} 
 		else {
 			return $this->session->userdata("img_profile");          
