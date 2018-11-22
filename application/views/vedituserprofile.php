@@ -42,8 +42,6 @@
               <div class="col-sm-12">
                 <div class="panel widget light-widget">
                   <div class="panel-heading no-title"> </div>  
-                  <?=@$error?>                
-                  <span><?php echo validation_errors(); ?></span>
                   <form class="form-horizontal"  role="form" action="<?php echo base_url(); ?>ceditprofile/update" method="post" enctype="multipart/form-data">
                     <div  class="panel-body">
                       <h2 class="mgbt-xs-20"><span class="font-semibold" id="apellido"><?php echo $usuario->apell_usuario; ?></span><span>, </span><span class="font-semibold" id="nombre"><?php echo $usuario->nom_usuario; ?></span><span>.</span></h2>
