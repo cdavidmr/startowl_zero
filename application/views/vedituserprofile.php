@@ -53,7 +53,7 @@
                           <div class="form-group">
                             <div class="col-xs-12">
                               <div class="form-img text-center mgbt-xs-15"> <img alt="example image" src="<?php echo $usuario->imagen_usuario; ?>"> </div>
-                              <div class="form-img-action text-center mgbt-xs-20"> <input type="file" name="imagenperfil" accept="image/*"></div>
+                              <div class="form-img-action text-center mgbt-xs-20"> <input type="file" name="fileImagen" accept="image/*"></div>
                               <br/>
                               <div>
                                 <table class="table table-striped table-hover">

@@ -24,6 +24,44 @@ class Ceditprofile extends CI_Controller {
 		}		
 	}
 
+	public function uploadImg(){
+		$config['upload_path'] = './uploads/thumbs/';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['min_width'] = '205';
+        $config['min_height'] = '205';
+
+        $this->load->library('upload',$config);
+
+        if ($this->upload->do_upload("fileImagen")) {
+            $file_info = $this->upload->data();
+
+			$this->crearMiniatura($file_info['file_name'],$file_info['file_ext']);
+            return '/uploads/thumbs/' . $nom_img;
+		} 
+		else {
+			return $this->session->userdata("img_profile");          
+        }
+	}
+
+	function crearMiniatura($filename,$ext){
+
+		$s = strtoupper(md5(uniqid(rand(),true)));
+		$nom_img = time() . "_" . substr($s, 12,4) . "." . $ext;
+
+        $config['image_library'] = 'gd2';
+        $config['source_image'] = 'uploads/thumbs/'.$filename;
+        $config['create_thumb'] = TRUE;
+        $config['maintain_ratio'] = TRUE;
+        $config['new_image']='uploads/thumbs/';
+        $config['thumb_marker']= $nom_img;//captura_thumb.png
+        $config['width'] = 205;
+        $config['height'] = 205;
+        $this->load->library('image_lib', $config); 
+		$this->image_lib->resize();
+		$path = 'uploads/thumbs/'.$filename;
+		unlink($path);
+    }
+
 	public function update(){
 		$nombre = strtolower($this->input->post("nombre"));
         $apellido = strtolower($this->input->post("apellido"));
@@ -31,7 +69,6 @@ class Ceditprofile extends CI_Controller {
 		// $email = $this->input->post("email");
 		// $username = $this->input->post("username");
 		$password = $this->input->post("password");
-		$nombre_img = $_FILES['imagenperfil']['name'];
 		$fnacimiento = $this->input->post("fnacimiento");
 		$descripcion = strtolower($this->input->post("descripcion"));
 		$tel = $this->input->post("telefono");
@@ -42,19 +79,20 @@ class Ceditprofile extends CI_Controller {
 		$twitter = strtolower($this->input->post("twitter"));
 		
 		//Imagen miniatura y nombre
-		if (file_exists($nombre_img)) {
-			$ext = pathinfo($nombre_img, PATHINFO_EXTENSION);
-			$s = strtoupper(md5(uniqid(rand(), true)));	     
-			$nombre_img = time() . "_" . substr($s, 12, 4) . "." . $ext;
-			$directorio = $_SERVER['DOCUMENT_ROOT'] . 'resources/profile/img/';
-			move_uploaded_file($_FILES['img_profile']['tmp_name'], $directorio . $nombre_img);
-			$image = new ImageResize($directorio . $nombre_img);
-			$image->resize(205, 205);
-			$image->save($directorio . $nombre_img);
-			$imagen_profile = '/resources/profile/img/' . $nombre_img; 
-		}else{
-			$imagen_profile = $this->session->userdata("img_profile"); 
-		}
+		$imagen = $this->uploadImg();
+		// if (file_exists($nombre_img)) {
+		// 	$ext = pathinfo($nombre_img, PATHINFO_EXTENSION);
+		// 	$s = strtoupper(md5(uniqid(rand(), true)));	     
+		// 	$nombre_img = time() . "_" . substr($s, 12, 4) . "." . $ext;
+		// 	$directorio = $_SERVER['DOCUMENT_ROOT'] . 'resources/profile/img/';
+		// 	move_uploaded_file($_FILES['img_profile']['tmp_name'], $directorio . $nombre_img);
+		// 	$image = new ImageResize($directorio . $nombre_img);
+		// 	$image->resize(205, 205);
+		// 	$image->save($directorio . $nombre_img);
+		// 	$imagen_profile = '/resources/profile/img/' . $nombre_img; 
+		// }else{
+		// 	$imagen_profile = $this->session->userdata("img_profile"); 
+		// }
 		if (!empty($password)) {
 			$data  = array(		
 				'nom_usuario' => ucwords($nombre), 
@@ -63,7 +101,7 @@ class Ceditprofile extends CI_Controller {
 				// 'email_usuario' => strtolower($email), 
 				// 'username_usuario' => strtolower($username), 
 				'pass_usuario' => sha1($password),	 
-				'imagen_usuario' => $imagen_profile,	 	 
+				'imagen_usuario' => $imagen,	 	 
 				'descripcion_usuario' => $descripcion,	 
 				'tel_usuario' => $tel,	 
 				'webpage_usuario' => $web,	 
@@ -77,7 +115,7 @@ class Ceditprofile extends CI_Controller {
 				'cod_pais' => ucwords($pais), 
 				// 'email_usuario' => strtolower($email), 
 				// 'username_usuario' => strtolower($username),
-				'imagen_usuario' => $imagen_profile, 		 
+				'imagen_usuario' => $imagen, 		 
 				'descripcion_usuario' => $descripcion,	 
 				'tel_usuario' => $tel,	 
 				'webpage_usuario' => $web,	 
