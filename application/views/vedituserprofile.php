@@ -33,7 +33,7 @@
                   <?php if($this->session->flashdata("right")):?>
                     <div class="alert alert-success">
                     <button type="button" class="close" data-dismiss="alert"><i class="icon-cross"></i></button>
-                    <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span><strong><?php echo $this->session->flashdata("registrado"); ?></strong> </div>              
+                    <span class="vd_alert-icon"><i class="fa fa-check-circle vd_green"></i></span><strong><?php echo $this->session->flashdata("right"); ?></strong> </div>              
                  <?php endif; ?>
                  <!-- END MENSAJES -->
 
